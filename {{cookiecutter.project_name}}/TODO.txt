@@ -1,0 +1,4 @@
+In the wrokflow explain when translating the Title.
+Potential rename de methods names.
+Debug
+hassfest and hacs test en local ?

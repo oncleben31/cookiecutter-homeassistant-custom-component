@@ -1,0 +1,32 @@
+{
+    "title": "{{cookiecutter.friendly_name}}",
+    "config": {
+        "step": {
+            "user": {
+                "title": "{{cookiecutter.friendly_name}}",
+                "description": "Hvis du trenger hjep til konfigurasjon ta en titt her: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}",
+                "data": {
+                    "username": "Brukernavn",
+                    "password": "Passord"
+                }
+            }
+        },
+        "error": {
+            "auth": "Brukernavn/Passord er feil."
+        },
+        "abort": {
+            "single_instance_allowed": "Du kan bare konfigurere denne integrasjonen en gang."
+        }
+    },
+    "options": {
+        "step": {
+            "user": {
+                "data": {
+                    "binary_sensor": "Binær sensor aktivert",
+                    "sensor": "Sensor aktivert",
+                    "switch": "Bryter aktivert"
+                }
+            }
+        }
+    }
+}

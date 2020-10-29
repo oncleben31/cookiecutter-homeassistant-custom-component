@@ -1,0 +1,13 @@
+{
+  "domain": "{{ cookiecutter.domain_name }}",
+  "name": "{{ cookiecutter.friendly_name }}",
+  "documentation": "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}",
+  "dependencies": [],
+  "config_flow": true,
+  "codeowners": [
+    "@{{cookiecutter.github_user}}"
+  ],
+  "requirements": [
+    "sampleclient"
+  ]
+}
