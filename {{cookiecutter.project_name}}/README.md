@@ -124,6 +124,10 @@ custom_components/{{ cookiecutter.domain_name }}/switch.py
 
 If you want to contribute to this please read the [Contribution guidelines](CONTRIBUTING.md)
 
+## Credits
+
+This project was generated from [@oncleben31](https://github.com/oncleben31)'s [Home Assistant Custom Component Cookiecutter](https://github.com/oncleben31/cookiecutter-homeassistant-custom-component) template.
+
 ***
 
 [blueprint]: https://github.com/custom-components/blueprint

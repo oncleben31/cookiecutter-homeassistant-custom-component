@@ -34,6 +34,10 @@ Platform | Description
 
 <!---->
 
+## Credits
+
+This project was generated from [@oncleben31](https://github.com/oncleben31)'s [Home Assistant Custom Component Cookiecutter](https://github.com/oncleben31/cookiecutter-homeassistant-custom-component) template.
+
 ***
 
 [blueprint]: https://github.com/custom-components/blueprint
