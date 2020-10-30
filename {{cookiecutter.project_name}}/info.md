@@ -1,6 +1,6 @@
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
-[![License][license-shield]](LICENSE)
+[![License][license-shield]][license]
 
 [![hacs][hacsbadge]](hacs)
 [![Project Maintenance][maintenance-shield]][user_profile]
@@ -38,13 +38,15 @@ Platform | Description
 
 This project was generated from [@oncleben31](https://github.com/oncleben31)'s [Home Assistant Custom Component Cookiecutter](https://github.com/oncleben31/cookiecutter-homeassistant-custom-component) template.
 
+Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [blueprint][blueprint] template
+
 ***
 
 [blueprint]: https://github.com/custom-components/blueprint
 [buymecoffee]: https://www.buymeacoffee.com/ludeeus
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
-[commits-shield]: https://img.shields.io/github/commit-activity/y/{{cookiecutter.github_user}}/{{ cookiecutter.project_name }}.svg?style=for-the-badge
-[commits]: https://github.com/{{cookiecutter.github_user}}/{{ cookiecutter.project_name }}/commits/main
+[commits-shield]: https://img.shields.io/github/commit-activity/y/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
+[commits]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/commits/main
 [hacs]: https://github.com/custom-components/hacs
 [hacsbadge]: https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge
 [discord]: https://discord.gg/Qa5fW2R
@@ -52,8 +54,9 @@ This project was generated from [@oncleben31](https://github.com/oncleben31)'s [
 [exampleimg]: example.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/
-[license-shield]: https://img.shields.io/github/license/{{cookiecutter.github_user}}/{{ cookiecutter.project_name }}.svg?style=for-the-badge
+[license]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/blob/main/LICENSE
+[license-shield]: https://img.shields.io/github/license/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
 [maintenance-shield]: https://img.shields.io/badge/maintainer-%40{{cookiecutter.github_user}}-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/{{cookiecutter.github_user}}/{{ cookiecutter.project_name }}.svg?style=for-the-badge
-[releases]: https://github.com/{{cookiecutter.github_user}}/{{ cookiecutter.project_name }}/releases
+[releases-shield]: https://img.shields.io/github/release/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
+[releases]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/releases
 [user_profile]: https://github.com/{{cookiecutter.github_user}}

@@ -79,8 +79,6 @@ README content if this was a published component:
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
-_Component to integrate with [blueprint][blueprint]._
-
 **This component will set up the following platforms.**
 
 Platform | Description
@@ -127,6 +125,8 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 ## Credits
 
 This project was generated from [@oncleben31](https://github.com/oncleben31)'s [Home Assistant Custom Component Cookiecutter](https://github.com/oncleben31/cookiecutter-homeassistant-custom-component) template.
+
+Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [blueprint][blueprint] template
 
 ***
 
