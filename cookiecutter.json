@@ -4,5 +4,5 @@
   "domain_name": "{{ cookiecutter.friendly_name | slugify(separator='_') }}",
   "github_user": "oncleben31",
   "version": "0.0.0",
-  "_copy_without_render": ["*.md", "*.yml", "*.yaml"]
+  "_copy_without_render": ["*.yml", "*.yaml"]
 }

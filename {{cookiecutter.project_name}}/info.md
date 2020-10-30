@@ -1,9 +1,9 @@
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
-[![License][license-shield]](LICENSE)
+[![License][license-shield]][license]
 
-[![hacs][hacsbadge]](hacs)
-![Project Maintenance][maintenance-shield]
+[![hacs][hacsbadge]][hacs]
+[![Project Maintenance][maintenance-shield]][user_profile]
 [![BuyMeCoffee][buymecoffeebadge]][buymecoffee]
 
 [![Discord][discord-shield]][discord]
@@ -21,34 +21,42 @@ Platform | Description
 
 ![example][exampleimg]
 
-{% if not installed %}
+{{ "{% if not installed %}" }}
 ## Installation
 
 1. Click install.
 1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "Blueprint".
 
-{% endif %}
+{{ "{% endif %}" }}
 
 
 ## Configuration is done in the UI
 
 <!---->
 
+## Credits
+
+This project was generated from [@oncleben31](https://github.com/oncleben31)'s [Home Assistant Custom Component Cookiecutter](https://github.com/oncleben31/cookiecutter-homeassistant-custom-component) template.
+
+Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [blueprint][blueprint] template
+
 ***
 
 [blueprint]: https://github.com/custom-components/blueprint
 [buymecoffee]: https://www.buymeacoffee.com/ludeeus
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
-[commits-shield]: https://img.shields.io/github/commit-activity/y/custom-components/blueprint.svg?style=for-the-badge
-[commits]: https://github.com/custom-components/blueprint/commits/master
-[hacs]: https://github.com/custom-components/hacs
+[commits-shield]: https://img.shields.io/github/commit-activity/y/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
+[commits]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/commits/main
+[hacs]: https://hacs.xyz
 [hacsbadge]: https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
 [exampleimg]: example.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/
-[license-shield]: https://img.shields.io/github/license/custom-components/blueprint.svg?style=for-the-badge
-[maintenance-shield]: https://img.shields.io/badge/maintainer-Joakim%20Sørensen%20%40ludeeus-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/custom-components/blueprint.svg?style=for-the-badge
-[releases]: https://github.com/custom-components/blueprint/releases
+[license]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/blob/main/LICENSE
+[license-shield]: https://img.shields.io/github/license/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
+[maintenance-shield]: https://img.shields.io/badge/maintainer-%40{{cookiecutter.github_user}}-blue.svg?style=for-the-badge
+[releases-shield]: https://img.shields.io/github/release/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
+[releases]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/releases
+[user_profile]: https://github.com/{{cookiecutter.github_user}}
