@@ -2,7 +2,7 @@
 [![GitHub Activity][commits-shield]][commits]
 [![License][license-shield]][license]
 
-[![hacs][hacsbadge]](hacs)
+[![hacs][hacsbadge]][hacs]
 [![Project Maintenance][maintenance-shield]][user_profile]
 [![BuyMeCoffee][buymecoffeebadge]][buymecoffee]
 
@@ -47,7 +47,7 @@ Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [bl
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
 [commits-shield]: https://img.shields.io/github/commit-activity/y/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
 [commits]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/commits/main
-[hacs]: https://github.com/custom-components/hacs
+[hacs]: https://hacs.xyz
 [hacsbadge]: https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
