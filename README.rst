@@ -74,13 +74,13 @@ Install Cookiecutter_:
 
 pipx_ is preferred, but you can also install with ``pip install --user``.
 
-It is recommended to set up Python 3.7, 3.8, and 3.9 using pyenv_.
+It is recommended to set up Python 3.7, 3.8, or 3.9 using pyenv_.
 
 
 Creating a project
 ------------------
 
-Generate a Python project:
+Generate a Home Assistant custom component project:
 
 .. code:: console
 
@@ -112,7 +112,8 @@ and create a Git repository:
 .. _GitHub Actions: https://github.com/features/actions
 .. _HACS: https://hacs.xyz/
 .. _Home Assistant: https://www.home-assistant.io/
-.. _Hypermodern Python: https://medium.com/@cjolowicz/hypermodern-python-d44485d9d769
+.. _Home Assistant developers documentation: https://developers.home-assistant.io/
+.. _Hypermodern Python: https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
 .. _pipx: https://pipxproject.github.io/pipx/
 .. _pre-commit: https://pre-commit.com/
 .. _pyenv: https://github.com/pyenv/pyenv
