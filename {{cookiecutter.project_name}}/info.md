@@ -9,8 +9,6 @@
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
-_Component to integrate with [blueprint][blueprint]._
-
 **This component will set up the following platforms.**
 
 Platform | Description
