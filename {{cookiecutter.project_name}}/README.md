@@ -27,7 +27,7 @@ File | Purpose
 `.github/ISSUE_TEMPLATE/issue.md` | Template for issues
 `.github/settings.yml` | Probot settings to control the repository settings.
 `.vscode/tasks.json` | Tasks for the devcontainer.
-`custom_components/{{ cookiecutter.domain_name }}/.translations/*` | [Translation files.](https://developers.home-assistant.io/docs/en/next/internationalization_custom_component_localization.html#translation-strings)
+`custom_components/{{ cookiecutter.domain_name }}/translations/*` | [Translation files.](https://developers.home-assistant.io/docs/internationalization/custom_integration)
 `custom_components/{{ cookiecutter.domain_name }}/__init__.py` | The component file for the integration.
 `custom_components/{{ cookiecutter.domain_name }}/binary_sensor.py` | Binary sensor platform for the integration.
 `custom_components/{{ cookiecutter.domain_name }}/config_flow.py` | Config flow file, this adds the UI configuration possibilities.
