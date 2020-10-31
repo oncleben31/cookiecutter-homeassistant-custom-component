@@ -1,0 +1,32 @@
+{
+    "title": "{{cookiecutter.friendly_name}}",
+    "config": {
+        "step": {
+            "user": {
+                "title": "{{cookiecutter.friendly_name}}",
+                "description": "Vouz pourrez trouver de l'ainder pour la configuration en regardant ici: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}",
+                "data": {
+                    "username": "Identifiant",
+                    "password": "Mot de Passe"
+                }
+            }
+        },
+        "error": {
+            "auth": "Identifiant ou Mot de Passe erroné."
+        },
+        "abort": {
+            "single_instance_allowed": "Une seule configuration de cette intégration est permise."
+        }
+    },
+    "options": {
+        "step": {
+            "user": {
+                "data": {
+                    "binary_sensor": "Capteur binaire activé",
+                    "sensor": "Capteur activé",
+                    "switch": "Interrupteur activé"
+                }
+            }
+        }
+    }
+}
