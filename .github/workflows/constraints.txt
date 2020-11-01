@@ -1,2 +1,2 @@
 pip==20.2.4
-pre-commit==2.8.1
+pre-commit==2.8.2
