@@ -54,6 +54,8 @@ Features
 - HACS_ ready
 - Continuous integration with `GitHub Actions`_
 
+You can find a repository created with this cookiecutter template in the
+`cookiecutter-homeassistant-custom-component-instance`_ example.
 
 .. features-end
 
@@ -107,6 +109,7 @@ and create a Git repository:
 .. _blueprint: https://github.com/custom-components/blueprint
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-homeassistant-component: https://github.com/boralyl/cookiecutter-homeassistant-component
+.. _cookiecutter-homeassistant-custom-component-instance: https://github.com/oncleben31/cookiecutter-homeassistant-custom-component-instance
 .. _cookiecutter-hypermodern-python: https://github.com/cjolowicz/cookiecutter-hypermodern-python
 .. _GitHub: https://github.com/
 .. _GitHub Actions: https://github.com/features/actions
