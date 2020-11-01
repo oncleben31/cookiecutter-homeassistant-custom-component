@@ -4,7 +4,7 @@
         "step": {
             "user": {
                 "title": "{{cookiecutter.friendly_name}}",
-                "description": "Vouz pourrez trouver de l'ainder pour la configuration en regardant ici: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}",
+                "description": "Si vous avez besoin d'aide pour la configuration, regardez ici: https://github.com/oncleben31/awesome-custom-component",
                 "data": {
                     "username": "Identifiant",
                     "password": "Mot de Passe"
@@ -12,7 +12,7 @@
             }
         },
         "error": {
-            "auth": "Identifiant ou Mot de Passe erroné."
+            "auth": "Identifiant ou mot de passe erroné."
         },
         "abort": {
             "single_instance_allowed": "Une seule configuration de cette intégration est permise."
