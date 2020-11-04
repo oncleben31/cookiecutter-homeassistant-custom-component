@@ -6,6 +6,8 @@ Home Assistant custom component Cookiecutter
    :maxdepth: 1
 
    Quickstart <quickstart>
+   contributing
+   Code of Conduct <codeofconduct>
    License <license>
    Changelog <https://github.com/oncleben31/cookiecutter-homeassistant-custom-component/releases>
 
