@@ -5,6 +5,7 @@ cookiecutter-homeassistant-custom-component
 .. badges-begin
 
 | |Status| |CalVer| |License|
+| |Read the Docs|
 | |pre-commit| |Black|
 
 .. |Status| image:: https://badgen.net/badge/status/alpha/d8624d
@@ -16,6 +17,9 @@ cookiecutter-homeassistant-custom-component
 .. |License| image:: https://img.shields.io/github/license/oncleben31/cookiecutter-homeassistant-custom-component
    :target: https://opensource.org/licenses/MIT
    :alt: License
+.. |Read the Docs| image:: https://img.shields.io/readthedocs/cookiecutter-homeassistant-custom-component/latest.svg?label=Read%20the%20Docs
+   :target: https://cookiecutter-homeassistant-custom-component.readthedocs.io/
+   :alt: Read the documentation at https://cookiecutter-homeassistant-custom-component.readthedocs.io/
 .. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
    :target: https://github.com/pre-commit/pre-commit
    :alt: pre-commit
@@ -32,6 +36,10 @@ blueprint_ template.
 
 This project is the fusion of `cookiecutter-homeassistant-component`_, blueprint_
 and `cookiecutter-hypermodern-python`_ projects.
+
+✨📚✨ `Read the full documentation`__
+
+__ https://cookiecutter-homeassistant-custom-component.readthedocs.io/
 
 
 Usage
@@ -54,8 +62,8 @@ Features
 - HACS_ ready
 - Continuous integration with `GitHub Actions`_
 
-You can find a repository created with this cookiecutter template in the
-`cookiecutter-homeassistant-custom-component-instance`_ example.
+You can find a repository created with this cookiecutter template
+in the `cookiecutter-homeassistant-custom-component-instance`_ example.
 
 .. features-end
 
