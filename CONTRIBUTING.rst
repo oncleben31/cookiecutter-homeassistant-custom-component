@@ -48,6 +48,8 @@ You need Python 3.7+ and the following tools:
 
 - Cookiecutter_
 - Nox_
+- Docker_
+- `Visual Studio Code`_
 
 Fork the repository on GitHub_,
 and clone the fork to your local machine. You can now generate a project
@@ -58,7 +60,9 @@ from your development version:
    $ cookiecutter path/to/cookiecutter-homeassistant-custom-component
 
 .. _Cookiecutter: https://cookiecutter.readthedocs.io/
+.. _Docker: https://www.docker.com/
 .. _Nox: https://nox.thea.codes/
+.. _Visual Studio Code: https://code.visualstudio.com/
 .. _Github: https://github.com/oncleben31/cookiecutter-homeassistant-custom-component
 
 
@@ -66,6 +70,9 @@ How to test the project
 -----------------------
 
 TBD
+
+At least you should ensure the integration generated is working in Home Assistant
+when launched by Visual Studio Code in a devcontainer.
 
 How to submit changes
 ---------------------
