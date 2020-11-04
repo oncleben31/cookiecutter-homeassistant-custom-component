@@ -17,8 +17,12 @@ Home Assistant custom component Cookiecutter
    :start-after: badges-begin
    :end-before: badges-end
 
-Cookiecutter_ template for a Home Assistant custom component
-based on the `blueprint`_ repository.
+Cookiecutter_ template for a `Home Assistant`_ custom component based
+on the blueprint_ template.
+
+This project is the fusion of `cookiecutter-homeassistant-component`_,
+blueprint_
+and `cookiecutter-hypermodern-python`_ projects.
 
 
 Usage
@@ -43,9 +47,9 @@ FAQ
 
   *What is this project about?*
 
-The mission of this project is to provide Home Assistant custom component developers a
-ready-to-use template with best practices from `Home Assistant developers documentation`_ and from
-`Hypermodern Python`_ blog articles.
+The mission of this project is to provide Home Assistant custom component developers
+a ready-to-use template with best practices from `Home Assistant developers documentation`_
+and from `Hypermodern Python`_ blog articles.
 
 .. include:: ../README.rst
    :start-after: references-begin
