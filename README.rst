@@ -163,6 +163,7 @@ Deploy with HACS
 
 HACS_ is the community store.
 You can ease the installation of your custom component by making it compatible with HACS.
+
 The template have already the tools do do that: ``hacs.json`` and ``info.md`` files.
 The `Publish documentation`_ explains how to set those files
 and the different options you have to integrate your custom component in the HACS network.
