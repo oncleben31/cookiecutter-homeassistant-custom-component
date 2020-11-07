@@ -131,7 +131,7 @@ Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [bl
 ***
 
 [blueprint]: https://github.com/custom-components/blueprint
-[buymecoffee]: https://www.buymeacoffee.com/ludeeus
+[buymecoffee]: https://www.buymeacoffee.com/{{cookiecutter.github_user}}
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
 [commits-shield]: https://img.shields.io/github/commit-activity/y/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
 [commits]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/commits/main
