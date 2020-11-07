@@ -139,6 +139,36 @@ Follow the config flow of the custom component to integrate it in Home Assistant
 
 Now you are all set to modify the code and develop your ideas !
 
+
+Advanced usages
+---------------
+
+Add a logo
+^^^^^^^^^^
+
+You have the possibility to add a logo to be used in the integrations configuration UI.
+To do so, visit the `home-assistant/brands`_ repository on GitHub
+and follow the instructions.
+
+Step by step debugging
+^^^^^^^^^^^^^^^^^^^^^^
+
+Step by step debugging is easy with Visual Studio Code.
+You have to install in Home Assistant the `PTVSD`_ integration
+and follow the documentation instructions to setup VSC.
+Then you will be able to connect the VSC debuger to the local Home Assistant instance.
+
+Deploy with HACS
+^^^^^^^^^^^^^^^^
+
+HACS_ is the community store.
+You can ease the installation of your custom component by making it compatible with HACS.
+The template have already the tools do do that: ``hacs.json`` and ``info.md`` files.
+The `Publish documentation`_ explains how to set those files
+and the different options you have to integrate your custom component in the HACS network.
+
+
+
 .. quickstart-end
 
 .. references-begin
@@ -155,11 +185,13 @@ Now you are all set to modify the code and develop your ideas !
 .. _HACS: https://hacs.xyz/
 .. _Home Assistant: https://www.home-assistant.io/
 .. _Home Assistant developers documentation: https://developers.home-assistant.io/
+.. _home-assistant/brands: https://github.com/home-assistant/brands
 .. _Hypermodern Python: https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
 .. _pipx: https://pipxproject.github.io/pipx/
 .. _pre-commit: https://pre-commit.com/
+.. _PTVSD: https://www.home-assistant.io/integrations/ptvsd/
+.. _Publish documentation: https://hacs.xyz/docs/publish/start
 .. _pyenv: https://github.com/pyenv/pyenv
 .. _Visual Studio Code: https://code.visualstudio.com/
 .. _Visual Studio Code Remote - Containers: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
-
 .. references-end
