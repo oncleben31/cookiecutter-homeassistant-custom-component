@@ -90,14 +90,24 @@ It is recommended to set up Python 3.7, 3.8, or 3.9 using pyenv_.
 Creating a project
 ------------------
 
-Generate a Home Assistant custom component project by using the following command
-and setting the different parameters of the template:
+Generate a Home Assistant custom component project by using the following command:
 
 .. code:: console
 
    $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component \
      --checkout="2020.10.30"
 
+Follow the instructions to customize the generated project
+
+=================  ============================================
+     Setting                         Definition
+=================  ============================================
+``friendly_name``   Integration name used in configuration UI.
+``project_name``    Project name on GitHub.
+``domain_name``     Integration domain name
+``github_user``     GitHub user hosting the repository
+``version``         Initial version of the component
+=================  ============================================
 
 Change to the root directory of your new project,
 and create a Git repository:
