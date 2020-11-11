@@ -2,6 +2,8 @@
 from .const import DEFAULT_NAME, DOMAIN, ICON, SENSOR
 from .entity import BlueprintEntity
 
+from homeassistant.util import slugify
+
 
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup sensor platform."""
