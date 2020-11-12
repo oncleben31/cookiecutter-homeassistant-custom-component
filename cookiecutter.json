@@ -2,6 +2,7 @@
   "friendly_name": "Awesome custom component",
   "project_name": "{{ cookiecutter.friendly_name | slugify }}",
   "domain_name": "{{ cookiecutter.friendly_name | slugify(separator='_') }}",
+  "class_name_prefix": "{{ cookiecutter.domain_name | replace('_', ' ') | title | replace(' ', '') }}",
   "github_user": "oncleben31",
   "version": "0.0.0",
   "_copy_without_render": [

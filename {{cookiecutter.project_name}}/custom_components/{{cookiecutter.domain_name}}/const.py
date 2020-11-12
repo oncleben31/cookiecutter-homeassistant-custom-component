@@ -1,4 +1,4 @@
-"""Constants for blueprint."""
+"""Constants for {{cookiecutter.friendly_name}}."""
 # Base component constants
 NAME = "{{ cookiecutter.friendly_name }}"
 DOMAIN = "{{ cookiecutter.domain_name }}"
