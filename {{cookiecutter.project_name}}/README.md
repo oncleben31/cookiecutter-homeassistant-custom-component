@@ -84,7 +84,7 @@ README content if this was a published component:
 Platform | Description
 -- | --
 `binary_sensor` | Show something `True` or `False`.
-`sensor` | Show info from blueprint API.
+`sensor` | Show info from {{ cookiecutter.friendly_name }} API.
 `switch` | Switch something `True` or `False`.
 
 ![example][exampleimg]

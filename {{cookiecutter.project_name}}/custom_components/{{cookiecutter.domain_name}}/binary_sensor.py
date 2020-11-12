@@ -1,4 +1,4 @@
-"""Binary sensor platform for blueprint."""
+"""Binary sensor platform for {{cookiecutter.friendly_name}}."""
 from homeassistant.components.binary_sensor import BinarySensorDevice
 
 from .const import (
@@ -7,17 +7,17 @@ from .const import (
     DEFAULT_NAME,
     DOMAIN,
 )
-from .entity import BlueprintEntity
+from .entity import {{cookiecutter.class_name_prefix}}Entity
 
 
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup binary_sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    async_add_devices([BlueprintBinarySensor(coordinator, entry)])
+    async_add_devices([{{cookiecutter.class_name_prefix}}BinarySensor(coordinator, entry)])
 
 
-class BlueprintBinarySensor(BlueprintEntity, BinarySensorDevice):
-    """blueprint binary_sensor class."""
+class {{cookiecutter.class_name_prefix}}BinarySensor({{cookiecutter.class_name_prefix}}Entity, BinarySensorDevice):
+    """{{cookiecutter.domain_name}} binary_sensor class."""
 
     @property
     def name(self):

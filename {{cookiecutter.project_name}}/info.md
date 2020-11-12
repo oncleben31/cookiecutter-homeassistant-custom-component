@@ -14,7 +14,7 @@
 Platform | Description
 -- | --
 `binary_sensor` | Show something `True` or `False`.
-`sensor` | Show info from blueprint API.
+`sensor` | Show info from {{ cookiecutter.friendly_name }}  API.
 `switch` | Switch something `True` or `False`.
 
 ![example][exampleimg]
@@ -23,7 +23,7 @@ Platform | Description
 ## Installation
 
 1. Click install.
-1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "Blueprint".
+1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "{{ cookiecutter.friendly_name }}".
 
 {{ "{% endif %}" }}
 

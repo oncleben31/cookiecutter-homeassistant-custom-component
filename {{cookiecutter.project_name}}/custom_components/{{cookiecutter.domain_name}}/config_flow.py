@@ -1,4 +1,4 @@
-"""Adds config flow for Blueprint."""
+"""Adds config flow for {{cookiecutter.friendly_name}}."""
 from homeassistant import config_entries
 from homeassistant.core import callback
 from sampleclient.client import Client
@@ -12,8 +12,8 @@ from .const import (  # pylint: disable=unused-import
 )
 
 
-class BlueprintFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
-    """Config flow for Blueprint."""
+class {{cookiecutter.class_name_prefix}}FlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
+    """Config flow for {{cookiecutter.domain_name}}."""
 
     VERSION = 1
     CONNECTION_CLASS = config_entries.CONN_CLASS_CLOUD_POLL
@@ -50,7 +50,7 @@ class BlueprintFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
     @staticmethod
     @callback
     def async_get_options_flow(config_entry):
-        return BlueprintOptionsFlowHandler(config_entry)
+        return {{cookiecutter.class_name_prefix}}OptionsFlowHandler(config_entry)
 
     async def _show_config_form(self, user_input):  # pylint: disable=unused-argument
         """Show the configuration form to edit location data."""
@@ -73,8 +73,8 @@ class BlueprintFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         return False
 
 
-class BlueprintOptionsFlowHandler(config_entries.OptionsFlow):
-    """Blueprint config flow options handler."""
+class {{cookiecutter.class_name_prefix}}OptionsFlowHandler(config_entries.OptionsFlow):
+    """{{cookiecutter.domain_name}} config flow options handler."""
 
     def __init__(self, config_entry):
         """Initialize HACS options flow."""

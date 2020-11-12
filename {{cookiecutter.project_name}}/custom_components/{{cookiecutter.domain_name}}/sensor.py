@@ -1,6 +1,6 @@
-"""Sensor platform for blueprint."""
+"""Sensor platform for {{cookiecutter.friendly_name}}."""
 from .const import DEFAULT_NAME, DOMAIN, ICON, SENSOR
-from .entity import BlueprintEntity
+from .entity import {{cookiecutter.class_name_prefix}}Entity
 
 from homeassistant.util import slugify
 
@@ -8,11 +8,11 @@ from homeassistant.util import slugify
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    async_add_devices([BlueprintSensor(coordinator, entry)])
+    async_add_devices([{{cookiecutter.class_name_prefix}}Sensor(coordinator, entry)])
 
 
-class BlueprintSensor(BlueprintEntity):
-    """blueprint Sensor class."""
+class {{cookiecutter.class_name_prefix}}Sensor({{cookiecutter.class_name_prefix}}Entity):
+    """{{cookiecutter.domain_name}} Sensor class."""
 
     @property
     def name(self):
