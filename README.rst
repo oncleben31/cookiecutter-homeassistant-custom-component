@@ -99,15 +99,16 @@ Generate a Home Assistant custom component project by using the following comman
 
 Follow the instructions to customize the generated project
 
-=================  ============================================
+=====================  ============================================
      Setting                         Definition
-=================  ============================================
-``friendly_name``   Integration name used in configuration UI.
-``project_name``    Project name on GitHub.
-``domain_name``     Integration domain name
-``github_user``     GitHub user hosting the repository
-``version``         Initial version of the component
-=================  ============================================
+=====================  ============================================
+``friendly_name``      Integration name used in configuration UI.
+``project_name``       Project name on GitHub.
+``domain_name``        Integration domain name
+``class_name_prefix``  Prefix to be use in classes name
+``github_user``        GitHub user hosting the repository
+``version``            Initial version of the component
+=====================  ============================================
 
 Change to the root directory of your new project,
 and create a Git repository:
