@@ -95,7 +95,7 @@ Generate a Home Assistant custom component project by using the following comman
 .. code:: console
 
    $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component \
-     --checkout="2020.10.30"
+     --checkout="2020.11.15"
 
 Follow the instructions to customize the generated project
 
