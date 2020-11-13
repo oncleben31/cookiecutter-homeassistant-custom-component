@@ -4,8 +4,6 @@ from .entity import {{cookiecutter.class_name_prefix}}Entity
 
 from homeassistant.util import slugify
 
-from homeassistant.util import slugify
-
 
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup sensor platform."""
@@ -31,3 +29,8 @@ class {{cookiecutter.class_name_prefix}}Sensor({{cookiecutter.class_name_prefix}
     def icon(self):
         """Return the icon of the sensor."""
         return ICON
+
+    @property
+    def device_class(self):
+        """Return de device class of the sensor."""
+        return "{{cookiecutter.domain_name}}__custom_device_class"
