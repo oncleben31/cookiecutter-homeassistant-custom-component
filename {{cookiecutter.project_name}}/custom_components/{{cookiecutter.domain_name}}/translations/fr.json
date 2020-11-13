@@ -4,7 +4,7 @@
         "step": {
             "user": {
                 "title": "{{cookiecutter.friendly_name}}",
-                "description": "Si vous avez besoin d'aide pour la configuration, regardez ici: https://github.com/oncleben31/awesome-custom-component",
+                "description": "Si vous avez besoin d'aide pour la configuration, regardez ici: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}",
                 "data": {
                     "username": "Identifiant",
                     "password": "Mot de Passe"
