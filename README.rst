@@ -180,6 +180,17 @@ The `Publish documentation`_ explains how to set those files
 and the different options you have to integrate your custom component in the HACS network.
 
 
+Known limitations
+-----------------
+
+- **If you plan to host the generated repository in a GitHub organization you will need manual modifications**.
+
+  Currently the template work well when the repostory is hosted in a GitHub individual account,
+  where URL name and code owner are the same.
+  If you want to use an organization,
+  it is recommended to use the name of this organization for ``github_user`` settings
+  and modify manually where it's needed afer generation with Cookiecutter.
+
 
 .. quickstart-end
 
