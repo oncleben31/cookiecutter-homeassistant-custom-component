@@ -31,7 +31,7 @@ Usage
 .. code:: console
 
    $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component \
-     --checkout="2020.11.15"
+     --checkout="2020.11.16"
 
 
 Features
