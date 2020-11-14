@@ -180,6 +180,17 @@ The `Publish documentation`_ explains how to set those files
 and the different options you have to integrate your custom component in the HACS network.
 
 
+Known limitations
+-----------------
+
+- **If you plan to host the generated repository in an organization you will need manual modification**.
+
+  Currently the template work well when the repostory is hosted in a GitHub individual account
+  where URL and codeowner are the same.
+  If you want to use an organization,
+  it is recommended to choose the name of this organization for ``github_user`` settings
+  and modify manually where it's needed.
+
 
 .. quickstart-end
 
