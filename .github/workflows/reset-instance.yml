@@ -1,0 +1,65 @@
+name: Reset instance
+on:
+  push:
+    branches:
+      - main
+jobs:
+  instance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out cookiecutter-homeassistant-custom-component
+        uses: actions/checkout@v2.3.4
+        with:
+          path: cookiecutter-homeassistant-custom-component
+      - name: Check out cookiecutter-homeassistant-custom-component-instance
+        uses: actions/checkout@v2.3.4
+        with:
+          repository: "oncleben31/cookiecutter-homeassistant-custom-component-instance"
+          path: cookiecutter-homeassistant-custom-component-instance
+          token: ${{ secrets.X_GITHUB_TOKEN }}
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2.1.4
+        with:
+          python-version: "3.9"
+      - name: Install cookiecutter
+        working-directory: cookiecutter-homeassistant-custom-component
+        run: |
+          pip install --constraint=.github/workflows/constraints.txt pip
+          pip install --constraint=.github/workflows/constraints.txt cookiecutter
+      - name: Remove working tree
+        run: |
+          mv cookiecutter-homeassistant-custom-component-instance/.git tmp.git
+          rm -rf cookiecutter-homeassistant-custom-component-instance
+          mkdir cookiecutter-homeassistant-custom-component-instance
+          mv tmp.git cookiecutter-homeassistant-custom-component-instance/.git
+      - name: Invoke cookiecutter
+        run: >-
+          cookiecutter
+          https://github.com/${GITHUB_REPOSITORY}
+          --overwrite-if-exists
+          --no-input
+          friendly_name="Cookiecutter Home Assistant Custom Component Instance"
+          domain_name=cookiecutter_homeassistant_custom_component_instance
+          project_name=cookiecutter-homeassistant-custom-component-instance
+
+      - name: Create commit
+        run: |
+          cd cookiecutter-homeassistant-custom-component
+          author="$(git show --no-patch --format='%an <%ae>')"
+          date="$(git show --no-patch --format=%ad)"
+          message="$(git show --no-patch --format=%B | sed 's/ *(#[0-9]\+)//g')
+
+          Original-Commit: ${GITHUB_REPOSITORY}@${GITHUB_SHA::7}"
+
+          cd ../cookiecutter-homeassistant-custom-component-instance
+          git config --local user.name "GitHub Action"
+          git config --local user.email "action@github.com"
+          git add .
+          git commit --allow-empty --author="$author" --date="$date" --message="$message"
+      - name: Push to instance
+        run: >-
+          git
+          -C cookiecutter-homeassistant-custom-component-instance
+          push
+          https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/oncleben31/cookiecutter-homeassistant-custom-component-instance.git
+          HEAD:main
