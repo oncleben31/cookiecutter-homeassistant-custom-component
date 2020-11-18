@@ -3,22 +3,9 @@ repos:
     rev: v3.3.0
     hooks:
       - id: check-added-large-files
-        name: Check for added large files
-        language: system
       - id: check-yaml
-        name: Check Yaml
-        language: system
-        types: [yaml]
       - id: end-of-file-fixer
-        name: Fix End of Files
-        language: system
-        types: [text]
-        stages: [commit, push, manual]
       - id: trailing-whitespace
-        name: Trim Trailing Whitespace
-        language: system
-        types: [text]
-        stages: [commit, push, manual]
   - repo: local
     hooks:
       - id: black
