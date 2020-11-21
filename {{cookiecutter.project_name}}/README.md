@@ -20,27 +20,27 @@ developers will have use for, please open a PR to add it :)
 
 This repository contains multiple files, here is a overview:
 
-File | Purpose
--- | --
-`.devcontainer/*` | Used for development/testing with VSCODE, more info in the readme file in that dir.
-`.github/ISSUE_TEMPLATE/feature_request.md` | Template for Feature Requests
-`.github/ISSUE_TEMPLATE/issue.md` | Template for issues
-`.github/settings.yml` | Probot settings to control the repository settings.
-`.vscode/tasks.json` | Tasks for the devcontainer.
-`custom_components/{{ cookiecutter.domain_name }}/translations/*` | [Translation files.](https://developers.home-assistant.io/docs/internationalization/custom_integration)
-`custom_components/{{ cookiecutter.domain_name }}/__init__.py` | The component file for the integration.
-`custom_components/{{ cookiecutter.domain_name }}/binary_sensor.py` | Binary sensor platform for the integration.
-`custom_components/{{ cookiecutter.domain_name }}/config_flow.py` | Config flow file, this adds the UI configuration possibilities.
-`custom_components/{{ cookiecutter.domain_name }}/const.py` | A file to hold shared variables/constants for the entire integration.
-`custom_components/{{ cookiecutter.domain_name }}/manifest.json` | A [manifest file](https://developers.home-assistant.io/docs/en/creating_integration_manifest.html) for Home Assistant.
-`custom_components/{{ cookiecutter.domain_name }}/sensor.py` | Sensor platform for the integration.
-`custom_components/{{ cookiecutter.domain_name }}/switch.py` | Switch sensor platform for the integration.
-`CONTRIBUTING.md` | Guidelines on how to contribute.
-`example.png` | Screenshot that demonstrate how it might look in the UI.
-`info.md` | An example on a info file (used by [hacs][hacs]).
-`LICENSE` | The license file for the project.
-`README.md` | The file you are reading now, should contain info about the integration, installation and configuration instructions.
-`requirements.txt` | Python packages used by this integration.
+| File                                                                                      | Purpose                                                                                                                |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `.devcontainer/*`                                                                         | Used for development/testing with VSCODE, more info in the readme file in that dir.                                    |
+| `.github/ISSUE_TEMPLATE/feature_request.md`                                               | Template for Feature Requests                                                                                          |
+| `.github/ISSUE_TEMPLATE/issue.md`                                                         | Template for issues                                                                                                    |
+| `.github/settings.yml`                                                                    | Probot settings to control the repository settings.                                                                    |
+| `.vscode/tasks.json`                                                                      | Tasks for the devcontainer.                                                                                            |
+| `custom_components/{{cookiecutter.domain_name}}/translations/*`   | [Translation files.](https://developers.home-assistant.io/docs/internationalization/custom_integration)                |
+| `custom_components/{{cookiecutter.domain_name}}/__init__.py`      | The component file for the integration.                                                                                |
+| `custom_components/{{cookiecutter.domain_name}}/binary_sensor.py` | Binary sensor platform for the integration.                                                                            |
+| `custom_components/{{cookiecutter.domain_name}}/config_flow.py`   | Config flow file, this adds the UI configuration possibilities.                                                        |
+| `custom_components/{{cookiecutter.domain_name}}/const.py`         | A file to hold shared variables/constants for the entire integration.                                                  |
+| `custom_components/{{cookiecutter.domain_name}}/manifest.json`    | A [manifest file](https://developers.home-assistant.io/docs/en/creating_integration_manifest.html) for Home Assistant. |
+| `custom_components/{{cookiecutter.domain_name}}/sensor.py`        | Sensor platform for the integration.                                                                                   |
+| `custom_components/{{cookiecutter.domain_name}}/switch.py`        | Switch sensor platform for the integration.                                                                            |
+| `CONTRIBUTING.md`                                                                         | Guidelines on how to contribute.                                                                                       |
+| `example.png`                                                                             | Screenshot that demonstrate how it might look in the UI.                                                               |
+| `info.md`                                                                                 | An example on a info file (used by [hacs][hacs]).                                                                      |
+| `LICENSE`                                                                                 | The license file for the project.                                                                                      |
+| `README.md`                                                                               | The file you are reading now, should contain info about the integration, installation and configuration instructions.  |
+| `requirements.txt`                                                                        | Python packages used by this integration.                                                                              |
 
 ## How?
 
@@ -54,17 +54,18 @@ If you need to work on the python library in parallel of this integration
 easy to implement:
 
 - Create a dedicated branch for your python library on a public git repository (example: branch
-`dev` on `https://github.com/ludeeus/sampleclient`)
+  `dev` on `https://github.com/ludeeus/sampleclient`)
 - Update in the `manifest.json` file the `requirements` key to point on your development branch
-( example: `"requirements": ["git+https://github.com/ludeeus/sampleclient.git@dev#devp==0.0.1beta1"]`)
+  ( example: `"requirements": ["git+https://github.com/ludeeus/sampleclient.git@dev#devp==0.0.1beta1"]`)
 - Each time you need to make a modification to your python library, push it to your
-development branch and increase the number of the python library version in `manifest.json` file
-to ensure Home Assistant update the code of the python library. (example `"requirements": ["git+https://...==0.0.1beta2"]`).
+  development branch and increase the number of the python library version in `manifest.json` file
+  to ensure Home Assistant update the code of the python library. (example `"requirements": ["git+https://...==0.0.1beta2"]`).
 
+---
 
-***
 README content if this was a published component:
-***
+
+---
 
 # {{ cookiecutter.friendly_name }}
 
@@ -81,11 +82,11 @@ README content if this was a published component:
 
 **This component will set up the following platforms.**
 
-Platform | Description
--- | --
-`binary_sensor` | Show something `True` or `False`.
-`sensor` | Show info from {{ cookiecutter.friendly_name }} API.
-`switch` | Switch something `True` or `False`.
+| Platform        | Description                                                               |
+| --------------- | ------------------------------------------------------------------------- |
+| `binary_sensor` | Show something `True` or `False`.                                         |
+| `sensor`        | Show info from {{cookiecutter.friendly_name}} API. |
+| `switch`        | Switch something `True` or `False`.                                       |
 
 ![example][exampleimg]
 
@@ -128,7 +129,7 @@ This project was generated from [@oncleben31](https://github.com/oncleben31)'s [
 
 Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [blueprint][blueprint] template
 
-***
+---
 
 [blueprint]: https://github.com/custom-components/blueprint
 [buymecoffee]: https://www.buymeacoffee.com/{{cookiecutter.github_user}}

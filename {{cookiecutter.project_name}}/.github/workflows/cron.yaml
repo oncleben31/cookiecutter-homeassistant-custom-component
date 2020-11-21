@@ -2,20 +2,20 @@ name: Cron actions
 
 on:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: "0 0 * * *"
 
 jobs:
   validate:
     runs-on: "ubuntu-latest"
     name: Validate
     steps:
-        - uses: "actions/checkout@v2"
+      - uses: "actions/checkout@v2"
 
-        - name: HACS validation
-          uses: "hacs/integration/action@main"
-          with:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            CATEGORY: "integration"
+      - name: HACS validation
+        uses: "hacs/integration/action@main"
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CATEGORY: "integration"
 
-        - name: Hassfest validation
-          uses: "home-assistant/actions/hassfest@master"
+      - name: Hassfest validation
+        uses: "home-assistant/actions/hassfest@master"

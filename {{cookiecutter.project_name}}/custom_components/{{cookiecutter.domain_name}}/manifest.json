@@ -4,10 +4,6 @@
   "documentation": "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}",
   "dependencies": [],
   "config_flow": true,
-  "codeowners": [
-    "@{{cookiecutter.github_user}}"
-  ],
-  "requirements": [
-    "sampleclient"
-  ]
+  "codeowners": ["@{{cookiecutter.github_user}}"],
+  "requirements": ["sampleclient"]
 }
