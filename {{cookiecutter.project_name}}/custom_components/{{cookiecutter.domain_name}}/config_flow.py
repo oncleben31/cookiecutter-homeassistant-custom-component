@@ -1,18 +1,18 @@
 """Adds config flow for {{cookiecutter.friendly_name}}."""
+import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.core import callback
 from sampleclient.client import Client
-import voluptuous as vol
 
-from .const import (  # pylint: disable=unused-import
-    CONF_PASSWORD,
-    CONF_USERNAME,
-    DOMAIN,
-    PLATFORMS,
-)
+from .const import CONF_PASSWORD
+from .const import CONF_USERNAME
+from .const import DOMAIN
+from .const import PLATFORMS
 
 
-class {{cookiecutter.class_name_prefix}}FlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
+class {{cookiecutter.class_name_prefix}}FlowHandler(
+    config_entries.ConfigFlow, domain=DOMAIN
+):
     """Config flow for {{cookiecutter.domain_name}}."""
 
     VERSION = 1
@@ -50,7 +50,9 @@ class {{cookiecutter.class_name_prefix}}FlowHandler(config_entries.ConfigFlow, d
     @staticmethod
     @callback
     def async_get_options_flow(config_entry):
-        return {{cookiecutter.class_name_prefix}}OptionsFlowHandler(config_entry)
+        return {{cookiecutter.class_name_prefix}}OptionsFlowHandler(
+            config_entry
+        )
 
     async def _show_config_form(self, user_input):  # pylint: disable=unused-argument
         """Show the configuration form to edit location data."""
@@ -73,7 +75,9 @@ class {{cookiecutter.class_name_prefix}}FlowHandler(config_entries.ConfigFlow, d
         return False
 
 
-class {{cookiecutter.class_name_prefix}}OptionsFlowHandler(config_entries.OptionsFlow):
+class {{cookiecutter.class_name_prefix}}OptionsFlowHandler(
+    config_entries.OptionsFlow
+):
     """{{cookiecutter.domain_name}} config flow options handler."""
 
     def __init__(self, config_entry):

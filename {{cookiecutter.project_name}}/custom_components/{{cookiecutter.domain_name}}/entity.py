@@ -1,7 +1,9 @@
 """{{cookiecutter.class_name_prefix}}Entity class"""
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .const import DOMAIN, NAME, VERSION
+from .const import DOMAIN
+from .const import NAME
+from .const import VERSION
 
 
 class {{cookiecutter.class_name_prefix}}Entity(CoordinatorEntity):

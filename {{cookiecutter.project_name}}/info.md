@@ -11,22 +11,22 @@
 
 **This component will set up the following platforms.**
 
-Platform | Description
--- | --
-`binary_sensor` | Show something `True` or `False`.
-`sensor` | Show info from {{ cookiecutter.friendly_name }}  API.
-`switch` | Switch something `True` or `False`.
+| Platform        | Description                                                               |
+| --------------- | ------------------------------------------------------------------------- |
+| `binary_sensor` | Show something `True` or `False`.                                         |
+| `sensor`        | Show info from {{cookiecutter.friendly_name}} API. |
+| `switch`        | Switch something `True` or `False`.                                       |
 
 ![example][exampleimg]
 
 {{ "{% if not installed %}" }}
+
 ## Installation
 
 1. Click install.
 1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "{{ cookiecutter.friendly_name }}".
 
 {{ "{% endif %}" }}
-
 
 ## Configuration is done in the UI
 
@@ -38,7 +38,7 @@ This project was generated from [@oncleben31](https://github.com/oncleben31)'s [
 
 Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [blueprint][blueprint] template
 
-***
+---
 
 [blueprint]: https://github.com/custom-components/blueprint
 [buymecoffee]: https://www.buymeacoffee.com/ludeeus

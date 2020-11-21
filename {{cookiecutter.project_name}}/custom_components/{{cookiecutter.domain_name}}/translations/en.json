@@ -1,32 +1,32 @@
 {
-    "title": "{{cookiecutter.friendly_name}}",
-    "config": {
-        "step": {
-            "user": {
-                "title": "{{cookiecutter.friendly_name}}",
-                "description": "If you need help with the configuration have a look here: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}",
-                "data": {
-                    "username": "Username",
-                    "password": "Password"
-                }
-            }
-        },
-        "error": {
-            "auth": "Username/Password is wrong."
-        },
-        "abort": {
-            "single_instance_allowed": "Only a single configuration of this integration is allowed."
+  "title": "{{cookiecutter.friendly_name}}",
+  "config": {
+    "step": {
+      "user": {
+        "title": "{{cookiecutter.friendly_name}}",
+        "description": "If you need help with the configuration have a look here: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}",
+        "data": {
+          "username": "Username",
+          "password": "Password"
         }
+      }
     },
-    "options": {
-        "step": {
-            "user": {
-                "data": {
-                    "binary_sensor": "Binary sensor enabled",
-                    "sensor": "Sensor enabled",
-                    "switch": "Switch enabled"
-                }
-            }
-        }
+    "error": {
+      "auth": "Username/Password is wrong."
+    },
+    "abort": {
+      "single_instance_allowed": "Only a single configuration of this integration is allowed."
     }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "data": {
+          "binary_sensor": "Binary sensor enabled",
+          "sensor": "Sensor enabled",
+          "switch": "Switch enabled"
+        }
+      }
+    }
+  }
 }
