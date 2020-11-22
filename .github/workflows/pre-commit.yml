@@ -1,5 +1,13 @@
 name: Linting
-on: [push, pull_request]
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+  pull_request:
+
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
