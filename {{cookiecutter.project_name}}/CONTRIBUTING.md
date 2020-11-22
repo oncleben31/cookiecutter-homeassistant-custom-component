@@ -74,6 +74,7 @@ activate the settings of the repository:
 ```console
 $ pre-commit install
 ```
+
 Now the pre-commit tests will be done every time you commit.
 
 You can run the tests on all repository file with the command:
@@ -81,6 +82,7 @@ You can run the tests on all repository file with the command:
 ```console
 $ pre-commit run --all-files
 ```
+
 ## License
 
 By contributing, you agree that your contributions will be licensed under its MIT License.
