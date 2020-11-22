@@ -61,6 +61,7 @@ Features
 - Development and testing in Visual Studio Code development container
 - HACS_ ready
 - Continuous integration with `GitHub Actions`_
+- Settings for pre-commit
 
 You can find a repository created with this cookiecutter template
 in the `cookiecutter-homeassistant-custom-component-instance`_ example.
