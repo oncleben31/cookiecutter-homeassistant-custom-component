@@ -1,6 +1,6 @@
 default_config:
 
 logger:
-  default: error
+  default: info
   logs:
-    custom_components.{{cookiecutter.domain_name}}: debug
+    custom_components.integration_blueprint: debug
