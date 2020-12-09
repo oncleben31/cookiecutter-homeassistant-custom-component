@@ -52,12 +52,12 @@ Or use the `pre-commit` settings implemented in this repository
 
 ## Test your code modification
 
-This custom component is based on [blueprint template](https://github.com/custom-components/blueprint).
+This custom component is based on [integration_blueprint template](https://github.com/custom-components/integration_blueprint).
 
 It comes with development environment in a container, easy to launch
 if you use Visual Studio Code. With this container you will have a stand alone
 Home Assistant instance running and already configured with the included
-[`.devcontainer/configuration.yaml`](https://github.com/oncleben31/ha-pool_pump/blob/master/.devcontainer/configuration.yaml)
+[`.devcontainer/configuration.yaml`](./.devcontainer/configuration.yaml)
 file.
 
 You can use the `pre-commit` settings implemented in this repository to have

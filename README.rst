@@ -32,9 +32,9 @@ cookiecutter-homeassistant-custom-component
 |
 
 Cookiecutter_ template for a `Home Assistant`_ custom component based on the
-blueprint_ template.
+integration_blueprint_ template.
 
-This project is the fusion of `cookiecutter-homeassistant-component`_, blueprint_
+This project is the fusion of `cookiecutter-homeassistant-component`_, integration_blueprint_
 and `cookiecutter-hypermodern-python`_ projects.
 
 ✨📚✨ `Read the full documentation`__
@@ -198,7 +198,7 @@ Known limitations
 .. references-begin
 
 .. _Black: https://github.com/psf/black
-.. _blueprint: https://github.com/custom-components/blueprint
+.. _integration_blueprint: https://github.com/custom-components/integration_blueprint
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-homeassistant-component: https://github.com/boralyl/cookiecutter-homeassistant-component
 .. _cookiecutter-homeassistant-custom-component-instance: https://github.com/oncleben31/cookiecutter-homeassistant-custom-component-instance
