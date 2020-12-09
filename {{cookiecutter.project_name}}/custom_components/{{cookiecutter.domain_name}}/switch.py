@@ -1,5 +1,5 @@
 """Switch platform for {{cookiecutter.friendly_name}}."""
-from homeassistant.components.switch import SwitchDevice
+from homeassistant.components.switch import SwitchEntity
 
 from .const import DEFAULT_NAME
 from .const import DOMAIN
@@ -21,18 +21,18 @@ async def async_setup_entry(hass, entry, async_add_devices):
 
 
 class {{cookiecutter.class_name_prefix}}BinarySwitch(
-    {{cookiecutter.class_name_prefix}}Entity, SwitchDevice
+    {{cookiecutter.class_name_prefix}}Entity, SwitchEntity
 ):
     """{{cookiecutter.domain_name}} switch class."""
 
     async def async_turn_on(self, **kwargs):  # pylint: disable=unused-argument
         """Turn on the switch."""
-        await self.coordinator.api.async_change_something(True)
+        await self.coordinator.api.async_set_title("bar")
         await self.coordinator.async_request_refresh()
 
     async def async_turn_off(self, **kwargs):  # pylint: disable=unused-argument
         """Turn off the switch."""
-        await self.coordinator.api.async_change_something(False)
+        await self.coordinator.api.async_set_title("foo")
         await self.coordinator.async_request_refresh()
 
     @property
@@ -48,4 +48,4 @@ class {{cookiecutter.class_name_prefix}}BinarySwitch(
     @property
     def is_on(self):
         """Return true if the switch is on."""
-        return self.coordinator.api.something
+        return self.coordinator.data.get("title", "") == "foo"

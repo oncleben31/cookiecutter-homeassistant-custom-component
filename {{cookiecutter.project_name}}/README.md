@@ -4,8 +4,6 @@ The component and platforms in this repository are not meant to be used by a
 user, but as a "blueprint" that custom component developers can build
 upon, to make more awesome stuff.
 
-This blueprint uses ['sampleclient'](https://github.com/ludeeus/sampleclient) to simulate what you actually might use in your integration.
-
 HAVE FUN! 😎
 
 ## Why?
@@ -29,6 +27,7 @@ This repository contains multiple files, here is a overview:
 | `.vscode/tasks.json`                                                                      | Tasks for the devcontainer.                                                                                            |
 | `custom_components/{{cookiecutter.domain_name}}/translations/*`   | [Translation files.](https://developers.home-assistant.io/docs/internationalization/custom_integration)                |
 | `custom_components/{{cookiecutter.domain_name}}/__init__.py`      | The component file for the integration.                                                                                |
+| `custom_components/{{cookiecutter.domain_name}}/api.py`           | This is a sample API client.                                                                                           |
 | `custom_components/{{cookiecutter.domain_name}}/binary_sensor.py` | Binary sensor platform for the integration.                                                                            |
 | `custom_components/{{cookiecutter.domain_name}}/config_flow.py`   | Config flow file, this adds the UI configuration possibilities.                                                        |
 | `custom_components/{{cookiecutter.domain_name}}/const.py`         | A file to hold shared variables/constants for the entire integration.                                                  |
@@ -103,16 +102,21 @@ README content if this was a published component:
 Using your HA configuration directory (folder) as a starting point you should now also have this:
 
 ```text
-custom_components/{{ cookiecutter.domain_name }}/.translations/en.json
-custom_components/{{ cookiecutter.domain_name }}/.translations/nb.json
-custom_components/{{ cookiecutter.domain_name }}/.translations/sensor.nb.json
-custom_components/{{ cookiecutter.domain_name }}/__init__.py
-custom_components/{{ cookiecutter.domain_name }}/binary_sensor.py
-custom_components/{{ cookiecutter.domain_name }}/config_flow.py
-custom_components/{{ cookiecutter.domain_name }}/const.py
-custom_components/{{ cookiecutter.domain_name }}/manifest.json
-custom_components/{{ cookiecutter.domain_name }}/sensor.py
-custom_components/{{ cookiecutter.domain_name }}/switch.py
+custom_components/{{cookiecutter.domain_name}}/translations/en.json
+custom_components/{{cookiecutter.domain_name}}/translations/fr.json
+custom_components/{{cookiecutter.domain_name}}/translations/nb.json
+custom_components/{{cookiecutter.domain_name}}/translations/sensor.en.json
+custom_components/{{cookiecutter.domain_name}}/translations/sensor.fr.json
+custom_components/{{cookiecutter.domain_name}}/translations/sensor.nb.json
+custom_components/{{cookiecutter.domain_name}}/translations/sensor.nb.json
+custom_components/{{cookiecutter.domain_name}}/__init__.py
+custom_components/{{cookiecutter.domain_name}}/api.py
+custom_components/{{cookiecutter.domain_name}}/binary_sensor.py
+custom_components/{{cookiecutter.domain_name}}/config_flow.py
+custom_components/{{cookiecutter.domain_name}}/const.py
+custom_components/{{cookiecutter.domain_name}}/manifest.json
+custom_components/{{cookiecutter.domain_name}}/sensor.py
+custom_components/{{cookiecutter.domain_name}}/switch.py
 ```
 
 ## Configuration is done in the UI
@@ -131,7 +135,7 @@ Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [bl
 
 ---
 
-[blueprint]: https://github.com/custom-components/blueprint
+[integration_blueprint]: https://github.com/custom-components/integration_blueprint
 [buymecoffee]: https://www.buymeacoffee.com/{{cookiecutter.github_user}}
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
 [commits-shield]: https://img.shields.io/github/commit-activity/y/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge

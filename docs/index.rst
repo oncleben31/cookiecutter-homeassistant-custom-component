@@ -18,10 +18,10 @@ Home Assistant custom component Cookiecutter
    :end-before: badges-end
 
 Cookiecutter_ template for a `Home Assistant`_ custom component based
-on the blueprint_ template.
+on the integration_blueprint_ template.
 
 This project is the fusion of `cookiecutter-homeassistant-component`_,
-blueprint_
+integration_blueprint_
 and `cookiecutter-hypermodern-python`_ projects.
 
 
