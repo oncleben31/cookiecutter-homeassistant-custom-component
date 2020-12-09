@@ -1,5 +1,4 @@
 {
-  "title": "{{cookiecutter.friendly_name}}",
   "config": {
     "step": {
       "user": {
