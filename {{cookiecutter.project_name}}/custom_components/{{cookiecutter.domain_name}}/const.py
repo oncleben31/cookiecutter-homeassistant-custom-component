@@ -5,6 +5,7 @@ DOMAIN = "{{ cookiecutter.domain_name }}"
 DOMAIN_DATA = f"{DOMAIN}_data"
 VERSION = "{{ cookiecutter.version }}"
 
+ATTRIBUTION = "Data provided by http://jsonplaceholder.typicode.com/"
 ISSUE_URL = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/issues"
 
 # Icons

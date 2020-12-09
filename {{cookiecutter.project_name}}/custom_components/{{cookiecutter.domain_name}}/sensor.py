@@ -1,6 +1,4 @@
 """Sensor platform for {{cookiecutter.friendly_name}}."""
-from homeassistant.util import slugify
-
 from .const import DEFAULT_NAME
 from .const import DOMAIN
 from .const import ICON
@@ -29,8 +27,7 @@ class {{cookiecutter.class_name_prefix}}Sensor(
     @property
     def state(self):
         """Return the state of the sensor."""
-        # slugify the state to allow translation
-        return slugify(self.coordinator.data.get("static"))
+        return self.coordinator.data.get("body")
 
     @property
     def icon(self):
