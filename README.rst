@@ -8,9 +8,6 @@ cookiecutter-homeassistant-custom-component
 | |Read the Docs|
 | |pre-commit| |Black|
 
-.. |Status| image:: https://badgen.net/badge/status/alpha/d8624d
-   :target: https://badgen.net/badge/status/alpha/d8624d
-   :alt: Project Status
 .. |CalVer| image:: https://img.shields.io/badge/calver-YYYY.MM.DD-22bfda.svg
    :target: http://calver.org/
    :alt: CalVer
