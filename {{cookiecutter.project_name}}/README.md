@@ -72,6 +72,9 @@ README content if this was a published component:
 [![GitHub Activity][commits-shield]][commits]
 [![License][license-shield]](LICENSE)
 
+[![pre-commit][pre-commit-shield]][pre-commit]
+[![Black][black-shield]][black]
+
 [![hacs][hacsbadge]][hacs]
 [![Project Maintenance][maintenance-shield]][user_profile]
 [![BuyMeCoffee][buymecoffeebadge]][buymecoffee]
@@ -136,6 +139,8 @@ Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [bl
 ---
 
 [integration_blueprint]: https://github.com/custom-components/integration_blueprint
+[black]: https://github.com/psf/black
+[black-shield]: https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge
 [buymecoffee]: https://www.buymeacoffee.com/{{cookiecutter.github_user}}
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
 [commits-shield]: https://img.shields.io/github/commit-activity/y/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
@@ -149,6 +154,8 @@ Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [bl
 [forum]: https://community.home-assistant.io/
 [license-shield]: https://img.shields.io/github/license/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
 [maintenance-shield]: https://img.shields.io/badge/maintainer-%40{{cookiecutter.github_user}}-blue.svg?style=for-the-badge
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[pre-commit-shield]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.svg?style=for-the-badge
 [releases]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/releases
 [user_profile]: https://github.com/{{cookiecutter.github_user}}
