@@ -4,7 +4,7 @@ cookiecutter-homeassistant-custom-component
 
 .. badges-begin
 
-| |Status| |CalVer| |License|
+| |CalVer| |License|
 | |Read the Docs|
 | |pre-commit| |Black|
 
