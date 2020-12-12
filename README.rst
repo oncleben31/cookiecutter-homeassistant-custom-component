@@ -59,7 +59,7 @@ Features
 - Ready to use Home Assistant custom component
 - UI configuration with config Flow
 - Translations
-- Development and testing in Visual Studio Code development container
+- Development, testing and step by step debugging in Visual Studio Code development container
 - HACS_ ready
 - Continuous integration with `GitHub Actions`_
 - Settings for pre-commit
@@ -181,6 +181,23 @@ The template have already the tools do do that: ``hacs.json`` and ``info.md`` fi
 The `Publish documentation`_ explains how to set those files
 and the different options you have to integrate your custom component in the HACS network.
 
+Step by step debugging
+^^^^^^^^^^^^^^^^^^^^^^
+
+If you choose to use Visual Studio Code with the development container, you can
+test your custom component in Home Assistant with step by step debugging.
+
+You need to modify the ``configuration.yaml`` file in ``.devcontainer`` folder
+by uncommenting the line:
+
+.. code :: yaml
+
+   # debugpy
+
+Then launch the task ``Run Home Assistant on port 9123``, and launch the debbuger
+with the existing debugging configuration ``Python: Attach Local``.
+
+For more information, look at `the Remote Python Debugger integration documentation`_.
 
 Known limitations
 -----------------
@@ -218,6 +235,7 @@ Known limitations
 .. _PTVSD: https://www.home-assistant.io/integrations/ptvsd/
 .. _Publish documentation: https://hacs.xyz/docs/publish/start
 .. _pyenv: https://github.com/pyenv/pyenv
+.. _the Remote Python Debugger integration documentation: https://www.home-assistant.io/integrations/debugpy/
 .. _Visual Studio Code: https://code.visualstudio.com/
 .. _Visual Studio Code Remote - Containers: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 .. references-end
