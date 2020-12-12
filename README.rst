@@ -48,7 +48,6 @@ Usage
 
    $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=\ |current-stable-version|\
 
-.. |current-stable-version| replace:: 2020.11.16
 
 .. usage-end
 
@@ -97,7 +96,7 @@ Generate a Home Assistant custom component project by using the following comman
 
 .. parsed-literal::
 
-   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=|current-stable-version|
+   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=\ |current-stable-version|\
 
 
 Follow the instructions to customize the generated project
@@ -199,6 +198,7 @@ Known limitations
 
 .. references-begin
 
+.. |current-stable-version| replace:: 2020.11.16
 .. _Black: https://github.com/psf/black
 .. _integration_blueprint: https://github.com/custom-components/integration_blueprint
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
