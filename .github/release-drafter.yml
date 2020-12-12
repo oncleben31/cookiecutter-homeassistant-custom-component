@@ -24,6 +24,21 @@ categories:
       - "dependencies"
       - "build"
 template: |
+  ## Check list (to be removed before releasing)
+
+  [ ] Check stable version reference in documentation is updated
+  [ ] Split all changes between the two categories (`Changes` vs `Chages to the Cookiecutter`)
+
+  ## Overview of changes
+
+  This section highlights the main changes brought by this release.
+
   ## Changes
+
+
+
+  ## Changes to the Cookiecutter
+
+  This section lists changes to the Cookiecutter that don't affect generated projects.
 
   $CHANGES
