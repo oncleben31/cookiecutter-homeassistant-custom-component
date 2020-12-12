@@ -46,7 +46,9 @@ Usage
 
 .. code:: console
 
-   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=2020.11.16
+   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=|current-stable-version|
+
+.. |current-stable-version| replace:: 2020.11.16
 
 .. usage-end
 
@@ -93,9 +95,10 @@ Creating a project
 
 Generate a Home Assistant custom component project by using the following command:
 
-.. include:: ../README.rst
-   :start-after: usage-begin
-   :end-before: usage-end
+.. code:: console
+
+   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=|current-stable-version|
+
 
 Follow the instructions to customize the generated project
 
