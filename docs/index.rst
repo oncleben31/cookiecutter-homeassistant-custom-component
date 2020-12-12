@@ -28,11 +28,9 @@ and `cookiecutter-hypermodern-python`_ projects.
 Usage
 -----
 
-.. code:: console
-
-   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component \
-     --checkout="2020.11.16"
-
+.. include:: ../README.rst
+   :start-after: usage-begin
+   :end-before: usage-end
 
 Features
 --------

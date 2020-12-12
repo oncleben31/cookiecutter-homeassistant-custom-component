@@ -42,10 +42,13 @@ __ https://cookiecutter-homeassistant-custom-component.readthedocs.io/
 Usage
 =====
 
+.. usage-begin
+
 .. code:: console
 
    $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=2020.11.16
 
+.. usage-end
 
 Features
 ========
@@ -90,10 +93,9 @@ Creating a project
 
 Generate a Home Assistant custom component project by using the following command:
 
-.. code:: console
-
-   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component \
-     --checkout="2020.11.16"
+.. include:: ../README.rst
+   :start-after: usage-begin
+   :end-before: usage-end
 
 Follow the instructions to customize the generated project
 
