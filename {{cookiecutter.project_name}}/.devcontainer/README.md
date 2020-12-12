@@ -50,11 +50,11 @@ you can test your custom component in Home Assistant with step by step debugging
 You need to modify the `configuration.yaml` file in `.devcontainer` folder
 by uncommenting the line:
 
-``` yaml
-  # debugpy
+```yaml
+# debugpy
 ```
 
 Then launch the task `Run Home Assistant on port 9123`, and launch the debbuger
-with the existing debugging configuration ``Python: Attach Local``.
+with the existing debugging configuration `Python: Attach Local`.
 
 For more information, look at [the Remote Python Debugger integration documentation](https://www.home-assistant.io/integrations/debugpy/).
