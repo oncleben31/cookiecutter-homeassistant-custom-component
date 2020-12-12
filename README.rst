@@ -44,7 +44,7 @@ Usage
 
 .. usage-begin
 
-.. code:: console
+.. parsed-literal::
 
    $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=|current-stable-version|
 
@@ -95,7 +95,7 @@ Creating a project
 
 Generate a Home Assistant custom component project by using the following command:
 
-.. code:: console
+.. parsed-literal::
 
    $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=|current-stable-version|
 
