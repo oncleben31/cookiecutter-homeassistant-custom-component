@@ -46,7 +46,7 @@ Usage
 
 .. parsed-literal::
 
-   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=|current-stable-version|
+   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component --checkout=\ |current-stable-version|\
 
 .. |current-stable-version| replace:: 2020.11.16
 
