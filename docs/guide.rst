@@ -11,12 +11,45 @@ If you're in a hurry, check out the :doc:`quickstart guide <quickstart>`.
     :local:
     :backlinks: none
 
-What?
------
+Introduction
+------------
+
+*In progress*
+
+About this project
+^^^^^^^^^^^^^^^^^^
+
+.. _Features:
+
+Features
+^^^^^^^^
+
+Here is a detailed list of features for this Python template:
+
+.. include:: ../README.rst
+   :start-after: features-begin
+   :end-before: features-end
+
+Release cadence
+^^^^^^^^^^^^^^^
+*In progress*
+
+Installation
+------------
+
+*In progress*
+
+Project creation
+----------------
+
+*In progress*
+
+Project overview
+----------------
 
 This repository contains multiple files, here is a overview:
 
-.. table:: File list
+.. table:: Files list
    :widths: auto
 
    ====================================================== ======================================================================================================================
@@ -42,10 +75,6 @@ This repository contains multiple files, here is a overview:
    ``requirements.txt``                                   Python packages used by this integration
    ====================================================== ======================================================================================================================
 
-
-How?
-----
-
 If you want to use all the potential and features of this blueprint template you
 should use Visual Studio Code to develop in a container. In this container you
 will have all the tools to ease your python development and a dedicated Home
@@ -62,6 +91,8 @@ The following one seems easy to implement:
 - Each time you need to make a modification to your Python library, push it to your
   development branch and increase the number of the Python library version in ``manifest.json`` file
   to ensure Home Assistant update the code of the python library. (example ``"requirements": ["git+https://...==0.0.1beta2"]``).
+
+
 
 Developing in Visual Studio Code with a development container
 -------------------------------------------------------------
@@ -108,7 +139,7 @@ and selecting ``Tasks: Restart Running Task``, then select the task you want to 
 
 The available tasks are:
 
-.. table:: File list
+.. table:: Tasks list
    :widths: auto
 
    ================================================== ================================================================================
@@ -139,6 +170,20 @@ with the existing debugging configuration ``Python: Attach Local``.
 For more information, look at the `Remote Python Debugger integration documentation`_.
 
 
+
+Linting
+-------
+
+*In progress*
+
+GitHub Actions Workflows
+------------------------
+
+*In progress*
+
+.. include:: ../README.rst
+   :start-after: references-begin
+   :end-before: references-end
 
 .. _current release version of Docker: https://docs.docker.com/install/
 .. _git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
