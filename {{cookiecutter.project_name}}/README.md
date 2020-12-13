@@ -14,6 +14,9 @@
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
+**TO BE REMOVED: If you need help, as a developper, to use this custom component tempalte,
+please look at the [User Guide in the Cookiecutter documentation](https://cookiecutter-homeassistant-custom-component.readthedocs.io/en/stable/quickstart.html)**
+
 **This component will set up the following platforms.**
 
 | Platform        | Description                                                               |
@@ -66,7 +69,7 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 
 This project was generated from [@oncleben31](https://github.com/oncleben31)'s [Home Assistant Custom Component Cookiecutter](https://github.com/oncleben31/cookiecutter-homeassistant-custom-component) template.
 
-Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [blueprint][blueprint] template
+Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [integration-blueprint][integration_blueprint] template
 
 ---
 
