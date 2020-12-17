@@ -181,6 +181,16 @@ GitHub Actions Workflows
 
 *In progress*
 
+Add a logo
+----------
+
+*In progress*
+
+Deploy on HACS
+--------------
+
+*In progress*
+
 .. include:: ../README.rst
    :start-after: references-begin
    :end-before: references-end
