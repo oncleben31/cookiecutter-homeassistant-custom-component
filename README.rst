@@ -74,7 +74,7 @@ in the `cookiecutter-homeassistant-custom-component-instance`_ example.
 
 .. references-begin
 
-.. |current-stable-version| replace:: 2020.11.16
+.. |current-stable-version| replace:: 2020.12.15
 .. _integration_blueprint: https://github.com/custom-components/integration_blueprint
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-homeassistant-component: https://github.com/boralyl/cookiecutter-homeassistant-component
