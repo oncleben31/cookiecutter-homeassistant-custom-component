@@ -14,7 +14,7 @@
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
-**TO BE REMOVED: If you need help, as a developper, to use this custom component tempalte,
+**TO BE REMOVED: If you need help, as a developer, to use this custom component tempalte,
 please look at the [User Guide in the Cookiecutter documentation](https://cookiecutter-homeassistant-custom-component.readthedocs.io/en/stable/quickstart.html)**
 
 **This component will set up the following platforms.**
