@@ -66,6 +66,7 @@ linting tool checking your contributions (see deicated section below).
 You should also verify that existing [tests](./tests) are still working and
 are encouraged to add new ones. You can run the tests using the following
 commands from the root folder:
+
 ```bash
 # Create a virtual environment
 python3 -m venv venv
@@ -75,6 +76,9 @@ pip install -r requirements_dev.txt
 # Run tests and get a summary of successes/failures and code coverage
 pytest --durations=10 --cov-report term-missing --cov=custom_components.{{cookie_cutter.domain_name}} tests
 ```
+
+If any of the tests fail, make the necessary changes to the tests as part of
+your changes to the integration.
 
 ## Pre-commit
 
