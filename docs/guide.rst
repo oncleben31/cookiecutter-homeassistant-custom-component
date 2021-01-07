@@ -79,7 +79,7 @@ This repository contains multiple files, here is a overview:
    ``LICENSE``                                                    The license file for the project
    ``README.md``                                                  The file you are reading now, should contain info about the integration, installation and configuration instructions
    ``requirements.txt``                                           Python packages used by this integration
-   ====================================================== ======================================================================================================================
+   =============================================================  ======================================================================================================================
 
 If you want to use all the potential and features of this blueprint template you
 should use Visual Studio Code to develop in a container. In this container you
