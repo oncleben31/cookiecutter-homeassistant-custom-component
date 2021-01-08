@@ -67,7 +67,7 @@ This repository contains multiple files, here is a overview:
    ``custom_components/[DOMAIN NAME]/manifest.json``              A `manifest file`_ for Home Assistant.
    ``custom_components/[DOMAIN NAME]/sensor.py``                  Sensor platform for the integration
    ``custom_components/[DOMAIN NAME]/switch.py``                  Switch sensor platform for the integration
-   ``custom_components/[DOMAIN NAME]/tests/__init__.py``          Makes the `tests` folder a module.
+   ``custom_components/[DOMAIN NAME]/tests/__init__.py``          Makes the `tests` folder a Python package.
    ``custom_components/[DOMAIN NAME]/tests/conftest.py``          Global fixtures_ used in tests to patch_ functions.
    ``custom_components/[DOMAIN NAME]/tests/test_api.py``          Tests for `custom_components/[DOMAIN NAME]/api.py`.
    ``custom_components/[DOMAIN NAME]/tests/test_config_flow.py``  Tests for `custom_components/[DOMAIN NAME]/config_flow.py`.
