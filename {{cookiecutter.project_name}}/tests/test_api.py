@@ -1,13 +1,13 @@
-"""Tests for {{cookiecutter.project_name}} api."""
+"""Tests for {{cookiecutter.friendly_name}} api."""
 import asyncio
 
 import aiohttp
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
-from custom_components.{{cookiecutter.project_name}}.api import {{cookiecutter.class_name_prefix}}ApiClient
+from custom_components.{{cookiecutter.domain_name}}.api import {{cookiecutter.class_name_prefix}}ApiClient
 
 
-async def test_ap(hass, aioclient_mock, caplog):
+async def test_api(hass, aioclient_mock, caplog):
     """Test API calls."""
 
     api = {{cookiecutter.class_name_prefix}}ApiClient("test", "test", async_get_clientsession(hass))

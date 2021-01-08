@@ -1,1 +1,1 @@
-"""Tests for {{cookiecutter.project_name}} integration."""
+"""Tests for {{cookiecutter.friendly_name}} integration."""

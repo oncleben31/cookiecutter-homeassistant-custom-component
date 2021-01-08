@@ -64,21 +64,23 @@ This repository contains multiple files, here is a overview:
    ``custom_components/[DOMAIN NAME]/binary_sensor.py``           Binary sensor platform for the integration
    ``custom_components/[DOMAIN NAME]/config_flow.py``             Config flow file, this adds the UI configuration possibilities
    ``custom_components/[DOMAIN NAME]/const.py``                   A file to hold shared variables/constants for the entire integration
-   ``custom_components/[DOMAIN NAME]/manifest.json``              A `manifest file`_ for Home Assistant.
+   ``custom_components/[DOMAIN NAME]/manifest.json``              A `manifest file`_ for Home Assistant
    ``custom_components/[DOMAIN NAME]/sensor.py``                  Sensor platform for the integration
    ``custom_components/[DOMAIN NAME]/switch.py``                  Switch sensor platform for the integration
-   ``custom_components/[DOMAIN NAME]/tests/__init__.py``          Makes the `tests` folder a Python package.
-   ``custom_components/[DOMAIN NAME]/tests/conftest.py``          Global fixtures_ used in tests to patch_ functions.
-   ``custom_components/[DOMAIN NAME]/tests/test_api.py``          Tests for `custom_components/[DOMAIN NAME]/api.py`.
-   ``custom_components/[DOMAIN NAME]/tests/test_config_flow.py``  Tests for `custom_components/[DOMAIN NAME]/config_flow.py`.
-   ``custom_components/[DOMAIN NAME]/tests/test_init.py``         Tests for `custom_components/[DOMAIN NAME]/__init__.py`.
-   ``custom_components/[DOMAIN NAME]/tests/test_switch.py``       Tests for `custom_components/[DOMAIN NAME]/switch.py`.
+   ``custom_components/[DOMAIN NAME]/tests/__init__.py``          Makes the `tests` folder a Python package
+   ``custom_components/[DOMAIN NAME]/tests/conftest.py``          Global fixtures_ used in tests to patch_ functions
+   ``custom_components/[DOMAIN NAME]/tests/test_api.py``          Tests for `custom_components/[DOMAIN NAME]/api.py`
+   ``custom_components/[DOMAIN NAME]/tests/test_config_flow.py``  Tests for `custom_components/[DOMAIN NAME]/config_flow.py`
+   ``custom_components/[DOMAIN NAME]/tests/test_init.py``         Tests for `custom_components/[DOMAIN NAME]/__init__.py`
+   ``custom_components/[DOMAIN NAME]/tests/test_switch.py``       Tests for `custom_components/[DOMAIN NAME]/switch.py`
    ``CONTRIBUTING.md``                                            Guidelines on how to contribute
    ``example.png``                                                Screenshot that demonstrate how it might look in the UI
    ``info.md``                                                    An example on a info file (used by HACS_)
    ``LICENSE``                                                    The license file for the project
    ``README.md``                                                  The file you are reading now, should contain info about the integration, installation and configuration instructions
    ``requirements.txt``                                           Python packages used by this integration
+   ``requirements_dev.txt``                                       Python packages used to provide IntelliSense_/code hints during development of this integration
+   ``requirements_test.txt``                                      Python packages required to run the tests for this integration
    =============================================================  ======================================================================================================================
 
 If you want to use all the potential and features of this blueprint template you
@@ -212,3 +214,4 @@ Deploy on HACS
 .. _Visual Studio code: https://code.visualstudio.com/
 .. _fixtures: https://docs.pytest.org/en/stable/fixture.html
 .. _patch: https://docs.python.org/3/library/unittest.mock.html#unittest.mock.patch
+.. _IntelliSense: https://code.visualstudio.com/docs/editor/intellisense

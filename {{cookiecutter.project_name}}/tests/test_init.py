@@ -1,9 +1,9 @@
-"""Test {{cookiecutter.project_name}} setup process."""
+"""Test {{cookiecutter.friendly_name}} setup process."""
 from homeassistant.exceptions import ConfigEntryNotReady
 import pytest
 from pytest_homeassistant_custom_component.common import MockConfigEntry
 
-from custom_components.{{cookiecutter.project_name}} import (
+from custom_components.{{cookiecutter.domain_name}} import (
     {{cookiecutter.class_name_prefix}}DataUpdateCoordinator,
     async_reload_entry,
     async_setup_entry,
@@ -26,7 +26,7 @@ async def test_setup_unload_and_reload_entry(hass, bypass_get_data):
 
     # Set up the entry and assert that the values set during setup are where we expect
     # them to be. Because we have patched the {{cookiecutter.class_name_prefix}}DataUpdateCoordinator.async_get_data
-    # call, no code from custom_components/{{cookiecutter.project_name}}/api.py actually runs.
+    # call, no code from custom_components/{{cookiecutter.domain_name}}/api.py actually runs.
     assert await async_setup_entry(hass, config_entry)
     assert DOMAIN in hass.data and config_entry.entry_id in hass.data[DOMAIN]
     assert (

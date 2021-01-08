@@ -1,8 +1,8 @@
-"""Test {{cookiecutter.project_name}} config flow."""
+"""Test {{cookiecutter.friendly_name}} config flow."""
 from homeassistant import config_entries, data_entry_flow
 from pytest_homeassistant_custom_component.common import MockConfigEntry
 
-from custom_components.{{cookiecutter.project_name}}.const import (
+from custom_components.{{cookiecutter.domain_name}}.const import (
     BINARY_SENSOR,
     DOMAIN,
     PLATFORMS,
