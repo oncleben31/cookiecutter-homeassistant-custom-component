@@ -9,7 +9,7 @@ from custom_components.{{cookiecutter.project_name}} import (
     async_setup_entry,
     async_unload_entry,
 )
-from custom_components.{{cookiecutter.project_name}}.const import DOMAIN
+from custom_components.{{cookiecutter.domain_name}}.const import DOMAIN
 
 from .const import MOCK_CONFIG
 
