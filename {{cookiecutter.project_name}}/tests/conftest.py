@@ -16,6 +16,8 @@ def skip_notifications_fixture():
         yield
 
 
+# This fixture, when used, will result in calls to async_get_data to return None. To have the call
+# return a value, we would add the `return_value=<VALUE_TO_RETURN>` parameter to the patch call.
 @pytest.fixture(name="bypass_get_data")
 def bypass_get_data_fixture():
     """Skip calls to get data from API."""
@@ -25,6 +27,8 @@ def bypass_get_data_fixture():
         yield
 
 
+# In this fixture, we are forcing calls to async_get_data to raise an Exception. This is useful
+# for exception handling.
 @pytest.fixture(name="error_on_get_data")
 def error_get_data_fixture():
     """Simulate error when retrieving data from API."""
