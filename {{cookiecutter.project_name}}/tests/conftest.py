@@ -1,6 +1,7 @@
 """Global fixtures for {{cookiecutter.friendly_name}} integration."""
+from unittest.mock import patch
+
 import pytest
-from pytest_homeassistant_custom_component.async_mock import patch
 
 pytest_plugins = "pytest_homeassistant_custom_component"
 
