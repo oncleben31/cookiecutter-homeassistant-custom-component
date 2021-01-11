@@ -72,9 +72,9 @@ You can run the tests using the following commands from the root folder:
 python3 -m venv venv
 source venv/bin/activate
 # Install requirements
-pip install -r requirements_dev.txt
+pip install -r requirements_test.txt
 # Run tests and get a summary of successes/failures and code coverage
-pytest --durations=10 --cov-report term-missing --cov=custom_components.{{cookie_cutter.domain_name}} tests
+pytest --durations=10 --cov-report term-missing --cov=custom_components.{{cookiecutter.domain_name}} tests
 ```
 
 If any of the tests fail, make the necessary changes to the tests as part of

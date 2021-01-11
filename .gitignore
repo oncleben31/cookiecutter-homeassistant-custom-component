@@ -3,3 +3,6 @@
 __pycache__/
 /.python-version
 /.vscode/
+.coverage
+venv
+.venv
