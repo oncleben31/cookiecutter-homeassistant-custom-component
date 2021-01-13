@@ -15,8 +15,9 @@ from custom_components.{{cookiecutter.domain_name}}.const import (
 
 from .const import MOCK_CONFIG
 
-# This fixture bypasses the actual setup of the component
-# since we only want to test the config flow.
+# This fixture bypasses the actual setup of the integration
+# since we only want to test the config flow. We test the
+# actual functionality of the integration in other test modules.
 @pytest.fixture(autouse=True)
 def bypass_setup_fixture():
     """Prevent setup."""
