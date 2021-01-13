@@ -39,7 +39,7 @@ jobs:
           --overwrite-if-exists
           --no-input
           friendly_name="Cookiecutter Home Assistant Custom Component Instance"
-          domain_name=cookiecutter_homeassistant_custom_component_instance
+          domain_name=cc_ha_cci
           project_name=cookiecutter-homeassistant-custom-component-instance
 
       - name: Create commit

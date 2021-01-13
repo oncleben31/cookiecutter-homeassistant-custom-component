@@ -1,15 +1,22 @@
 """Test {{cookiecutter.friendly_name}} setup process."""
-from homeassistant.exceptions import ConfigEntryNotReady
 import pytest
-from pytest_homeassistant_custom_component.common import MockConfigEntry
-
 from custom_components.{{cookiecutter.domain_name}} import (
-    {{cookiecutter.class_name_prefix}}DataUpdateCoordinator,
     async_reload_entry,
+)
+from custom_components.{{cookiecutter.domain_name}} import (
     async_setup_entry,
+)
+from custom_components.{{cookiecutter.domain_name}} import (
     async_unload_entry,
 )
-from custom_components.{{cookiecutter.domain_name}}.const import DOMAIN
+from custom_components.{{cookiecutter.domain_name}} import (
+    {{cookiecutter.class_name_prefix}}DataUpdateCoordinator,
+)
+from custom_components.{{cookiecutter.domain_name}}.const import (
+    DOMAIN,
+)
+from homeassistant.exceptions import ConfigEntryNotReady
+from pytest_homeassistant_custom_component.common import MockConfigEntry
 
 from .const import MOCK_CONFIG
 

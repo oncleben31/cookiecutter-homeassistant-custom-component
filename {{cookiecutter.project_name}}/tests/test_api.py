@@ -2,9 +2,10 @@
 import asyncio
 
 import aiohttp
+from custom_components.{{cookiecutter.domain_name}}.api import (
+    {{cookiecutter.class_name_prefix}}ApiClient,
+)
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
-
-from custom_components.{{cookiecutter.domain_name}}.api import {{cookiecutter.class_name_prefix}}ApiClient
 
 
 async def test_api(hass, aioclient_mock, caplog):
