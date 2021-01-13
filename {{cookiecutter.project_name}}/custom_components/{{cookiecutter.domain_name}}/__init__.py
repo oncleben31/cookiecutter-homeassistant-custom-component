@@ -43,13 +43,9 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     password = entry.data.get(CONF_PASSWORD)
 
     session = async_get_clientsession(hass)
-    client = {{cookiecutter.class_name_prefix}}ApiClient(
-        username, password, session
-    )
+    client = {{cookiecutter.class_name_prefix}}ApiClient(username, password, session)
 
-    coordinator = {{cookiecutter.class_name_prefix}}DataUpdateCoordinator(
-        hass, client=client
-    )
+    coordinator = {{cookiecutter.class_name_prefix}}DataUpdateCoordinator(hass, client=client)
     await coordinator.async_refresh()
 
     if not coordinator.last_update_success:
@@ -68,9 +64,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     return True
 
 
-class {{cookiecutter.class_name_prefix}}DataUpdateCoordinator(
-    DataUpdateCoordinator
-):
+class {{cookiecutter.class_name_prefix}}DataUpdateCoordinator(DataUpdateCoordinator):
     """Class to manage fetching data from the API."""
 
     def __init__(

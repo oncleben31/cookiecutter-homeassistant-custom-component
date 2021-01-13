@@ -11,18 +11,10 @@ from .entity import {{cookiecutter.class_name_prefix}}Entity
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    async_add_devices(
-        [
-            {{cookiecutter.class_name_prefix}}BinarySwitch(
-                coordinator, entry
-            )
-        ]
-    )
+    async_add_devices([{{cookiecutter.class_name_prefix}}BinarySwitch(coordinator, entry)])
 
 
-class {{cookiecutter.class_name_prefix}}BinarySwitch(
-    {{cookiecutter.class_name_prefix}}Entity, SwitchEntity
-):
+class {{cookiecutter.class_name_prefix}}BinarySwitch({{cookiecutter.class_name_prefix}}Entity, SwitchEntity):
     """{{cookiecutter.domain_name}} switch class."""
 
     async def async_turn_on(self, **kwargs):  # pylint: disable=unused-argument

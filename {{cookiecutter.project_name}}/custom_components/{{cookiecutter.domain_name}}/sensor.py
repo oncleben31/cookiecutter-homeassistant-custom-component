@@ -9,14 +9,10 @@ from .entity import {{cookiecutter.class_name_prefix}}Entity
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    async_add_devices(
-        [{{cookiecutter.class_name_prefix}}Sensor(coordinator, entry)]
-    )
+    async_add_devices([{{cookiecutter.class_name_prefix}}Sensor(coordinator, entry)])
 
 
-class {{cookiecutter.class_name_prefix}}Sensor(
-    {{cookiecutter.class_name_prefix}}Entity
-):
+class {{cookiecutter.class_name_prefix}}Sensor({{cookiecutter.class_name_prefix}}Entity):
     """{{cookiecutter.domain_name}} Sensor class."""
 
     @property
@@ -37,6 +33,4 @@ class {{cookiecutter.class_name_prefix}}Sensor(
     @property
     def device_class(self):
         """Return de device class of the sensor."""
-        return (
-            "{{cookiecutter.domain_name}}__custom_device_class"
-        )
+        return "{{cookiecutter.domain_name}}__custom_device_class"

@@ -11,9 +11,7 @@ from .const import DOMAIN
 from .const import PLATFORMS
 
 
-class {{cookiecutter.class_name_prefix}}FlowHandler(
-    config_entries.ConfigFlow, domain=DOMAIN
-):
+class {{cookiecutter.class_name_prefix}}FlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
     """Config flow for {{cookiecutter.domain_name}}."""
 
     VERSION = 1
@@ -49,9 +47,7 @@ class {{cookiecutter.class_name_prefix}}FlowHandler(
     @staticmethod
     @callback
     def async_get_options_flow(config_entry):
-        return {{cookiecutter.class_name_prefix}}OptionsFlowHandler(
-            config_entry
-        )
+        return {{cookiecutter.class_name_prefix}}OptionsFlowHandler(config_entry)
 
     async def _show_config_form(self, user_input):  # pylint: disable=unused-argument
         """Show the configuration form to edit location data."""
@@ -67,9 +63,7 @@ class {{cookiecutter.class_name_prefix}}FlowHandler(
         """Return true if credentials is valid."""
         try:
             session = async_create_clientsession(self.hass)
-            client = {{cookiecutter.class_name_prefix}}ApiClient(
-                username, password, session
-            )
+            client = {{cookiecutter.class_name_prefix}}ApiClient(username, password, session)
             await client.async_get_data()
             return True
         except Exception:  # pylint: disable=broad-except
@@ -77,9 +71,7 @@ class {{cookiecutter.class_name_prefix}}FlowHandler(
         return False
 
 
-class {{cookiecutter.class_name_prefix}}OptionsFlowHandler(
-    config_entries.OptionsFlow
-):
+class {{cookiecutter.class_name_prefix}}OptionsFlowHandler(config_entries.OptionsFlow):
     """Config flow options handler for {{cookiecutter.domain_name}}."""
 
     def __init__(self, config_entry):

@@ -11,18 +11,10 @@ from .entity import {{cookiecutter.class_name_prefix}}Entity
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup binary_sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    async_add_devices(
-        [
-            {{cookiecutter.class_name_prefix}}BinarySensor(
-                coordinator, entry
-            )
-        ]
-    )
+    async_add_devices([{{cookiecutter.class_name_prefix}}BinarySensor(coordinator, entry)])
 
 
-class {{cookiecutter.class_name_prefix}}BinarySensor(
-    {{cookiecutter.class_name_prefix}}Entity, BinarySensorEntity
-):
+class {{cookiecutter.class_name_prefix}}BinarySensor({{cookiecutter.class_name_prefix}}Entity, BinarySensorEntity):
     """{{cookiecutter.domain_name}} binary_sensor class."""
 
     @property
