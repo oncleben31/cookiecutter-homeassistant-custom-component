@@ -13,9 +13,10 @@ async def test_api(hass, aioclient_mock, caplog):
     # To test the api submodule, we first create an instance of our API client
     api = {{cookiecutter.class_name_prefix}}ApiClient("test", "test", async_get_clientsession(hass))
 
-    # We then try a call to `async_get_data` after mocking the response. This is useful
-    # for testing any logic that lives within the function, e.g. parsing or validating
-    # the return data
+    # Use aioclient_mock which is provided by `pytest_homeassistant_custom_components`
+    # to mock responses to aiohttp requests. In this case we are telling the mock to
+    # return {"test": "test"} when a `GET` call is made to the specified URL. We then
+    # call `async_get_data` which will make that `GET` request.
     aioclient_mock.get(
         "https://jsonplaceholder.typicode.com/posts/1", json={"test": "test"}
     )
@@ -33,6 +34,9 @@ async def test_api(hass, aioclient_mock, caplog):
     # only logic that lives inside `api_wrapper` that is not being handled by a third
     # party library (aiohttp) is the exception handling, we also want to simulate
     # raising the exceptions to ensure that the function handles them as expected.
+    # The caplog fixture allows access to log messages in tests. This is particularly
+    # useful during exception handling testing since often the only action as part of
+    # exception handling is a logging statement
     caplog.clear()
     aioclient_mock.put(
         "https://jsonplaceholder.typicode.com/posts/1", exc=asyncio.TimeoutError
