@@ -52,28 +52,36 @@ This repository contains multiple files, here is a overview:
 .. table:: Files list
    :widths: auto
 
-   ====================================================== ======================================================================================================================
-   ``.devcontainer/*``                                    Used for development/testing with VSCODE, more info in the readme file in that dir
-   ``.github/ISSUE_TEMPLATE/feature_request.md``          Template for Feature Requests
-   ``.github/ISSUE_TEMPLATE/issue.md``                    Template for issues
-   ``.github/settings.yml``                               Probot settings to control the repository settings.
-   ``.vscode/tasks.json``                                 Tasks for the devcontainer
-   ``custom_components/[DOMAIN NAME]/translations/*``     `Translation files`_
-   ``custom_components/[DOMAIN NAME]/__init__.py``        The component file for the integration
-   ``custom_components/[DOMAIN NAME]/api.py``             This is a sample API client
-   ``custom_components/[DOMAIN NAME]/binary_sensor.py``   Binary sensor platform for the integration
-   ``custom_components/[DOMAIN NAME]/config_flow.py``     Config flow file, this adds the UI configuration possibilities
-   ``custom_components/[DOMAIN NAME]/const.py``           A file to hold shared variables/constants for the entire integration
-   ``custom_components/[DOMAIN NAME]/manifest.json``      A `manifest file`_ for Home Assistant.
-   ``custom_components/[DOMAIN NAME]/sensor.py``          Sensor platform for the integration
-   ``custom_components/[DOMAIN NAME]/switch.py``          Switch sensor platform for the integration
-   ``CONTRIBUTING.md``                                    Guidelines on how to contribute
-   ``example.png``                                        Screenshot that demonstrate how it might look in the UI
-   ``info.md``                                            An example on a info file (used by HACS_)
-   ``LICENSE``                                            The license file for the project
-   ``README.md``                                          The file you are reading now, should contain info about the integration, installation and configuration instructions
-   ``requirements.txt``                                   Python packages used by this integration
-   ====================================================== ======================================================================================================================
+   =============================================================  ======================================================================================================================
+   ``.devcontainer/*``                                            Used for development/testing with VSCODE, more info in the readme file in that dir
+   ``.github/ISSUE_TEMPLATE/feature_request.md``                  Template for Feature Requests
+   ``.github/ISSUE_TEMPLATE/issue.md``                            Template for issues
+   ``.github/settings.yml``                                       Probot settings to control the repository settings.
+   ``.vscode/tasks.json``                                         Tasks for the devcontainer
+   ``custom_components/[DOMAIN NAME]/translations/*``             `Translation files`_
+   ``custom_components/[DOMAIN NAME]/__init__.py``                The component file for the integration
+   ``custom_components/[DOMAIN NAME]/api.py``                     This is a sample API client
+   ``custom_components/[DOMAIN NAME]/binary_sensor.py``           Binary sensor platform for the integration
+   ``custom_components/[DOMAIN NAME]/config_flow.py``             Config flow file, this adds the UI configuration possibilities
+   ``custom_components/[DOMAIN NAME]/const.py``                   A file to hold shared variables/constants for the entire integration
+   ``custom_components/[DOMAIN NAME]/manifest.json``              A `manifest file`_ for Home Assistant
+   ``custom_components/[DOMAIN NAME]/sensor.py``                  Sensor platform for the integration
+   ``custom_components/[DOMAIN NAME]/switch.py``                  Switch sensor platform for the integration
+   ``custom_components/[DOMAIN NAME]/tests/__init__.py``          Makes the `tests` folder a Python package
+   ``custom_components/[DOMAIN NAME]/tests/conftest.py``          Global fixtures_ used in tests to patch_ functions
+   ``custom_components/[DOMAIN NAME]/tests/test_api.py``          Tests for `custom_components/[DOMAIN NAME]/api.py`
+   ``custom_components/[DOMAIN NAME]/tests/test_config_flow.py``  Tests for `custom_components/[DOMAIN NAME]/config_flow.py`
+   ``custom_components/[DOMAIN NAME]/tests/test_init.py``         Tests for `custom_components/[DOMAIN NAME]/__init__.py`
+   ``custom_components/[DOMAIN NAME]/tests/test_switch.py``       Tests for `custom_components/[DOMAIN NAME]/switch.py`
+   ``CONTRIBUTING.md``                                            Guidelines on how to contribute
+   ``example.png``                                                Screenshot that demonstrate how it might look in the UI
+   ``info.md``                                                    An example on a info file (used by HACS_)
+   ``LICENSE``                                                    The license file for the project
+   ``README.md``                                                  The file you are reading now, should contain info about the integration, installation and configuration instructions
+   ``requirements.txt``                                           Python packages used by this integration
+   ``requirements_dev.txt``                                       Python packages used to provide IntelliSense_/code hints during development of this integration, typically includes packages in ``requirements.txt`` but may include additional packages
+   ``requirements_test.txt``                                      Python packages required to run the tests for this integration, typically includes packages in ``requirements_dev.txt`` but may include additional packages
+   =============================================================  ======================================================================================================================
 
 If you want to use all the potential and features of this blueprint template you
 should use Visual Studio Code to develop in a container. In this container you
@@ -204,3 +212,6 @@ Deploy on HACS
 .. _Remote Python Debugger integration documentation: https://www.home-assistant.io/integrations/debugpy/
 .. _Translation files: https://developers.home-assistant.io/docs/internationalization/custom_integration
 .. _Visual Studio code: https://code.visualstudio.com/
+.. _fixtures: https://docs.pytest.org/en/stable/fixture.html
+.. _patch: https://docs.python.org/3/library/unittest.mock.html#unittest.mock.patch
+.. _IntelliSense: https://code.visualstudio.com/docs/editor/intellisense
