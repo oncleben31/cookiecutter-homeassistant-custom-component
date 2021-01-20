@@ -1,6 +1,22 @@
 #!/usr/bin/env python
 import json
+import os
+import shutil
 from pathlib import Path
+
+REMOVE_PATHS = [
+    '{% if cookiecutter.test_suite != "yes" %} tests/ {% endif %}',
+]
+
+def remove_path():
+    """Remove some path according to cookiecutter parameters."""
+    for path in REMOVE_PATHS:
+        path = path.strip()
+        if os.path.isfile(path):
+            os.remove(path)
+        elif os.path.isdir(path):
+            shutil.rmtree(path)
+
 
 
 def reindent_cookiecutter_json():
@@ -22,3 +38,4 @@ def reindent_cookiecutter_json():
 
 if __name__ == "__main__":
     reindent_cookiecutter_json()
+    remove_path()
