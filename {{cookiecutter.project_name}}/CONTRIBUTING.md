@@ -63,6 +63,7 @@ file.
 You can use the `pre-commit` settings implemented in this repository to have
 linting tool checking your contributions (see deicated section below).
 
+{% if cookiecutter.test_suite != "yes" %}
 You should also verify that existing [tests](./tests) are still working
 and you are encouraged to add new ones.
 You can run the tests using the following commands from the root folder:
@@ -79,6 +80,7 @@ pytest --durations=10 --cov-report term-missing --cov=custom_components.{{cookie
 
 If any of the tests fail, make the necessary changes to the tests as part of
 your changes to the integration.
+{% endif %}
 
 ## Pre-commit
 
