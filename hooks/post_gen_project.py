@@ -6,6 +6,8 @@ from pathlib import Path
 
 REMOVE_PATHS = [
     '{% if cookiecutter.test_suite != "yes" %} tests/ {% endif %}',
+    '{% if cookiecutter.test_suite != "yes" %} requirements_dev.txt {% endif %}',
+    '{% if cookiecutter.test_suite != "yes" %} requirements_test.txt {% endif %}',
 ]
 
 def remove_path():
