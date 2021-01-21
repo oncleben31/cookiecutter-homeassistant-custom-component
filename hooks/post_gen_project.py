@@ -5,9 +5,12 @@ import shutil
 from pathlib import Path
 
 REMOVE_PATHS = [
-    '{% if cookiecutter.test_suite != "yes" %} tests/ {% endif %}',
-    '{% if cookiecutter.test_suite != "yes" %} requirements_dev.txt {% endif %}',
-    '{% if cookiecutter.test_suite != "yes" %} requirements_test.txt {% endif %}',
+    {% if cookiecutter.test_suite != "yes" %}
+    'tests/',
+    'requirements_dev.txt',
+    'requirements_test.txt',
+    'custom_components/__init__.py',
+    {% endif %}
 ]
 
 def remove_path():
