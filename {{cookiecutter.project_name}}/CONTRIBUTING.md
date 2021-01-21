@@ -63,7 +63,7 @@ file.
 You can use the `pre-commit` settings implemented in this repository to have
 linting tool checking your contributions (see deicated section below).
 
-{% if cookiecutter.test_suite != "yes" %}
+{% if cookiecutter.test_suite == "yes" %}
 You should also verify that existing [tests](./tests) are still working
 and you are encouraged to add new ones.
 You can run the tests using the following commands from the root folder:
