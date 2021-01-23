@@ -5,9 +5,5 @@
   "class_name_prefix": "{{ cookiecutter.domain_name | replace('_', ' ') | title | replace(' ', '') }}",
   "github_user": "oncleben31",
   "version": "0.0.0",
-  "test_suite": ["yes", "no"],
-  "_copy_without_render": [
-    ".github/workflows/*.yml",
-    ".github/workflows/*.yaml"
-  ]
+  "test_suite": ["yes", "no"]
 }

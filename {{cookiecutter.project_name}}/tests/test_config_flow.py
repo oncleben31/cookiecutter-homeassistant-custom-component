@@ -96,6 +96,7 @@ async def test_options_flow(hass):
     entry.add_to_hass(hass)
 
     # Initialize an options flow
+    await hass.config_entries.async_setup(entry.entry_id)
     result = await hass.config_entries.options.async_init(entry.entry_id)
 
     # Verify that the first options step is a user form
