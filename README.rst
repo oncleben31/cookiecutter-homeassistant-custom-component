@@ -8,7 +8,7 @@ cookiecutter-homeassistant-custom-component
 | |Read the Docs|
 | |pre-commit| |Black|
 
-.. |CalVer| image:: https://img.shields.io/badge/calver-YYYY.MM.DD-22bfda.svg
+.. |CalVer| image:: https://img.shields.io/badge/calver-YYYY.0M.Micro-22bfda.svg
    :target: http://calver.org/
    :alt: CalVer
 .. |License| image:: https://img.shields.io/github/license/oncleben31/cookiecutter-homeassistant-custom-component
