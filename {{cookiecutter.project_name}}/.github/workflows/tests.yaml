@@ -62,7 +62,7 @@ jobs:
       - name: Hassfest validation
         uses: "home-assistant/actions/hassfest@master"
 
-{% if cookiecutter.test_suite == "yes" %}
+{%- if cookiecutter.test_suite == "yes" %}
   tests:
     runs-on: "ubuntu-latest"
     name: Run tests
@@ -83,4 +83,4 @@ jobs:
             -n auto \
             -p no:sugar \
             tests
-{% endif %}
+{%- endif %}
