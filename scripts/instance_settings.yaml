@@ -1,0 +1,8 @@
+default_context:
+  class_name_prefix: CcHaCci
+  domain_name: cc_ha_cci
+  friendly_name: Cookiecutter Home Assistant Custom Component Instance
+  github_user: oncleben31
+  project_name: cookiecutter-homeassistant-custom-component-instance
+  test_suite: yes
+  version: 0.0.0

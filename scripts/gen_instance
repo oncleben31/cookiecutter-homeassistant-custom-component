@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Generate instance project from template for testing on GitHub.
+
+# Stop on errors
+set -e
+
+cd "$(dirname "$0")/../.."
+
+cookiecutter -f cookiecutter-homeassistant-custom-component --config-file cookiecutter-homeassistant-custom-component/scripts/instance_settings.yaml --no-input
