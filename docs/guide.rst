@@ -78,7 +78,6 @@ This repository contains multiple files, here is a overview:
    ``info.md``                                                    An example on a info file (used by HACS_)
    ``LICENSE``                                                    The license file for the project
    ``README.md``                                                  The file you are reading now, should contain info about the integration, installation and configuration instructions
-   ``requirements.txt``                                           Python packages used by this integration
    ``requirements_dev.txt``                                       Python packages used to provide IntelliSense_/code hints during development of this integration, typically includes packages in ``requirements.txt`` but may include additional packages
    ``requirements_test.txt``                                      Python packages required to run the tests for this integration, typically includes packages in ``requirements_dev.txt`` but may include additional packages
    =============================================================  ======================================================================================================================
