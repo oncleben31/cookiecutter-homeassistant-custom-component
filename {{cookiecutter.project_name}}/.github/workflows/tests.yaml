@@ -74,7 +74,9 @@ jobs:
         with:
           python-version: {{ "${{ env.DEFAULT_PYTHON }}" }}
       - name: Install requirements
-        run: python3 -m pip install -r requirements_test.txt
+        run:  |
+          pip install --constraint=.github/workflows/constraints.txt pip
+          pip install -r requirements_test.txt
       - name: Tests suite
         run: |
           pytest \
