@@ -47,6 +47,7 @@ How to set up your development environment
 You need Python 3.7+ and the following tools:
 
 - Cookiecutter_
+- Nox_
 - Docker_
 - `Visual Studio Code`_
 
