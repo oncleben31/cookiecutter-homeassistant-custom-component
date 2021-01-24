@@ -69,7 +69,10 @@ from your development version:
 How to test the project
 -----------------------
 
-You can manually test the generated integration with different tools implemented in Github workflows.
+This template repository has a Continuous Integration workflow that generate a default project
+from the cookiecutter template and run tests on it.
+
+You can also manually test the generated integration with different tools implemented in Github workflows.
 
 This template repository is linked to a generated `instance repository`_ for testing purpose.
 You can generate this instance by using the following command:
