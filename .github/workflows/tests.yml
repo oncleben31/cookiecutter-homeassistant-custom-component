@@ -31,7 +31,7 @@ jobs:
           pip install --constraint=.github/workflows/constraints.txt pip
           pip install --constraint=.github/workflows/constraints.txt cookiecutter
       - name: Generate project using Cookiecutter
-        run: cookiecutter --no-input cookiecutter-homeassistant-custom-component
+        run: ./scripts/gen_instance
       - name: Create git repository
         if: matrix.os != 'windows-latest'
         run: |
