@@ -79,6 +79,7 @@ jobs:
         run: |
           pip install --constraint=.github/workflows/constraints.txt pre-commit black flake8 reorder-python-imports
           pip install -r requirements_test.txt
+        working-directory: awesome-custom-component
 
       - name: Run pre-commit on all files
         run: |
