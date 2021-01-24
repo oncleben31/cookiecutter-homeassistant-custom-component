@@ -70,7 +70,8 @@ How to test the project
 -----------------------
 
 You can manually test the generated integration with different tools implemented in Github workflows.
-This template repository is linked to e generated `instance repository`_ for testing purpose.
+
+This template repository is linked to a generated `instance repository`_ for testing purpose.
 You can generate this instance by using the following command:
 
 .. parsed-literal::
@@ -82,7 +83,7 @@ You can run pre-commit or pytest suite manually
 and you can ensure the integration generated is working in Home Assistant
 when launched by Visual Studio Code in a devcontainer.
 
-Plese refere to generated project `CONTRIBUTING.rst` file for detailed instructions on testing.
+Plese refere to generated project ``CONTRIBUTING.rst`` file for detailed instructions on testing.
 
 .. _instance repository: https://github.com/oncleben31/cookiecutter-homeassistant-custom-component-instance
 
