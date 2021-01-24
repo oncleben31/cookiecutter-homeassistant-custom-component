@@ -47,7 +47,6 @@ How to set up your development environment
 You need Python 3.7+ and the following tools:
 
 - Cookiecutter_
-- Nox_
 - Docker_
 - `Visual Studio Code`_
 
@@ -167,7 +166,7 @@ To publish the release, follow these steps:
 5. Click **Publish Release**.
 
 Version numbers adhere to `Calendar Versioning`_,
-of the form ``YYYY.MM.DD``.
+of the form ``YYYY.MM.Micro``.
 
 After publishing the release, the following automated steps are triggered:
 
