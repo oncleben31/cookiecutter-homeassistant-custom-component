@@ -46,6 +46,8 @@ Usage
 
 .. usage-begin
 
+It is recommended to use the latest stable version by using the command:
+
 .. parsed-literal::
 
    $ cookiecutter gh:oncleben31/homeassistant-custom-component \\
@@ -66,6 +68,7 @@ Features
 - HACS_ ready
 - Continuous integration with `GitHub Actions`_
 - Settings for pre-commit
+- Optional tests suite with pytest and code coverage
 
 You can find a repository created with this cookiecutter template
 in the `cookiecutter-homeassistant-custom-component-instance`_ example.
@@ -74,7 +77,7 @@ in the `cookiecutter-homeassistant-custom-component-instance`_ example.
 
 .. references-begin
 
-.. |current-stable-version| replace:: 2020.12.15
+.. |current-stable-version| replace:: 2021.1.1
 .. _integration_blueprint: https://github.com/custom-components/integration_blueprint
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-homeassistant-component: https://github.com/boralyl/cookiecutter-homeassistant-component
