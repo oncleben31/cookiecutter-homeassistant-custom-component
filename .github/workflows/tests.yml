@@ -31,7 +31,7 @@ jobs:
           pip install --constraint=.github/workflows/constraints.txt pip
           pip install --constraint=.github/workflows/constraints.txt cookiecutter
       - name: Generate project using Cookiecutter
-        run: ./scripts/gen_instance
+        run: cookiecutter-homeassistant-custom-component/scripts/gen_instance
       - name: Create git repository
         if: matrix.os != 'windows-latest'
         run: |
@@ -40,7 +40,7 @@ jobs:
           git config --local user.email "action@github.com"
           git add .
           git commit --message="Initial import"
-        working-directory: awesome-custom-component
+        working-directory: cookiecutter-homeassistant-custom-component-instance
       - name: Create git repository (Windows)
         if: matrix.os == 'windows-latest'
         run: |
@@ -53,7 +53,7 @@ jobs:
           $ErrorActionPreference = "Stop"
           git add --renormalize .
           git commit --message="Initial import"
-        working-directory: awesome-custom-component
+        working-directory: cookiecutter-homeassistant-custom-component-instance
       - name: Compute cache key for pre-commit
         if: matrix.os != 'windows-latest'
         id: cache_key
@@ -72,19 +72,19 @@ jobs:
         if: matrix.os != 'windows-latest'
         with:
           path: ~/.cache/pre-commit
-          key: ${{ steps.cache_key.outputs.result }}-${{ hashFiles('awesome-custom-component/.pre-commit-config.yaml') }}
+          key: ${{ steps.cache_key.outputs.result }}-${{ hashFiles('cookiecutter-homeassistant-custom-component-instance/.pre-commit-config.yaml') }}
           restore-keys: |
             ${{ steps.cache_key.outputs.result }}-
       - name: Install Python modules
         run: |
           pip install --constraint=.github/workflows/constraints.txt pre-commit black flake8 reorder-python-imports
           pip install -r requirements_test.txt
-        working-directory: awesome-custom-component
+        working-directory: cookiecutter-homeassistant-custom-component-instance
 
       - name: Run pre-commit on all files
         run: |
           pre-commit run --all-files --show-diff-on-failure --color=always
-        working-directory: awesome-custom-component
+        working-directory: cookiecutter-homeassistant-custom-component-instance
 
       - name: Tests suite
         run: |
@@ -94,4 +94,4 @@ jobs:
             -n auto \
             -p no:sugar \
             tests
-        working-directory: awesome-custom-component
+        working-directory: cookiecutter-homeassistant-custom-component-instance
