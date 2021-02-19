@@ -53,6 +53,8 @@ This repository contains multiple files, here is a overview:
    :widths: auto
 
    =============================================================  ======================================================================================================================
+   File                                                           Description
+   =============================================================  ======================================================================================================================
    ``.devcontainer/*``                                            Used for development/testing with VSCODE, more info in the readme file in that dir
    ``.github/ISSUE_TEMPLATE/feature_request.md``                  Template for Feature Requests
    ``.github/ISSUE_TEMPLATE/issue.md``                            Template for issues
@@ -99,8 +101,6 @@ The following one seems easy to implement:
   development branch and increase the number of the Python library version in ``manifest.json`` file
   to ensure Home Assistant update the code of the python library. (example ``"requirements": ["git+https://...==0.0.1beta2"]``).
 
-
-
 Developing in Visual Studio Code with a development container
 -------------------------------------------------------------
 
@@ -121,7 +121,6 @@ Prerequisites
 
 `More info about requirements and devcontainer in general <https://code.visualstudio.com/docs/remote/containers#_getting-started>`_
 
-
 Getting started
 ^^^^^^^^^^^^^^^
 
@@ -133,6 +132,113 @@ this will start the build of the container.
 
 *If you don't see this notification,
 open the command palette and select ``Remote-Containers: Reopen Folder in Container``.*
+
+Development environment readiness
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you plan to commit changes directly from within the `devcontainer`, you need to ensure the `pre-commit` tools are installed there.
+When you'll attempt to commit a change, the `pre-commit` workflow will be executed (locally). In case it fails, the commit will be rejected.
+When you push committed changes to your remote GitHub repository, the `pre-commit` workflow will be executed remotly.
+So unless you disable this CI step, you should ensure your code can pass the step.
+
+To ensure ``pre-commit`` is properly installed, open a new ``terminal``
+window and follow these steps:
+
+Make sure ``pip`` is up to date
+"""""""""""""""""""""""""""""""
+
+.. code:: bash
+
+    $ /usr/local/bin/python -m pip install --upgrade pip
+    # (...)
+    # Successfully installed pip-x.y.z
+
+Install the ``pre-commit`` package
+""""""""""""""""""""""""""""""""""
+
+.. code:: bash
+
+    $ pip install pre-commit
+    # (...)
+    # Successfully installed (...) pre-commit-x.y.z
+
+Install the ``git`` hook scripts
+""""""""""""""""""""""""""""""""
+
+.. code:: bash
+
+    $ pre-commit install
+    # pre-commit installed at .git/hooks/pre-commit
+
+Install ``pre-commit`` hooks dependencies
+"""""""""""""""""""""""""""""""""""""""""
+
+By inspecting the ``.pre-commit-config.yaml`` file, we can get the list
+of packages required: ``flake8``, ``reorder-python-imports``, etc.
+
+Make sure ``flake8`` is installed
+"""""""""""""""""""""""""""""""""
+
+.. code:: bash
+
+    $ pip install flake8
+    # (...)
+    # Successfully installed (...) flake8-x.y.z
+
+Try running the ``flake8`` command directly in the terminal window to
+ensure ``flake8`` is correctly added to the ``PATH`` environment
+variable. If not, you can add it by running
+``export PATH=$PATH:/usr/local/bin/flake8``.
+
+If ``flake8`` is not found, you'll get an error when the ``pre-commit``
+hooks run:
+
+Make sure ``reorder-python-imports`` is installed
+"""""""""""""""""""""""""""""""""""""""""""""""""
+
+.. code:: bash
+
+    $ pip install reorder-python-imports
+    # (...)
+    # Successfully installed (...) reorder-python-imports-x.y.z
+
+Run the ``pre-commit`` workflow against your project's files
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Execute the following command to check your files.
+
+.. code:: bash
+
+    $ pre-commit run --all-files
+    # Check for added large files..............................................Passed
+    # Check Yaml...............................................................Passed
+    # Fix End of Files.........................................................Failed
+    # - hook id: end-of-file-fixer
+    # - exit code: 1
+    # - files were modified by this hook
+    #
+    # Fixing custom_components/[DOMAIN_NAME]/const.py
+    #
+    # Trim Trailing Whitespace.................................................Passed
+    # black....................................................................Passed
+    # flake8...................................................................Passed
+    # Reorder python imports...................................................Passed
+    # prettier.................................................................Passed
+
+When files get automatically fixed you can re-run the same command again
+and confirm you're all set now.
+
+.. code:: bash
+
+    $ pre-commit run --all-files
+    # Check for added large files..............................................Passed
+    # Check Yaml...............................................................Passed
+    # Fix End of Files.........................................................Passed
+    # Trim Trailing Whitespace.................................................Passed
+    # black....................................................................Passed
+    # flake8...................................................................Passed
+    # Reorder python imports...................................................Passed
+    # prettier.................................................................Passed
 
 Tasks
 ^^^^^
