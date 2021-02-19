@@ -216,9 +216,9 @@ Execute the following command to check your files.
     # - hook id: end-of-file-fixer
     # - exit code: 1
     # - files were modified by this hook
-    # 
+    #
     # Fixing custom_components/[DOMAIN_NAME]/const.py
-    # 
+    #
     # Trim Trailing Whitespace.................................................Passed
     # black....................................................................Passed
     # flake8...................................................................Passed
