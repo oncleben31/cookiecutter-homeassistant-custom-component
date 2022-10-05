@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out cookiecutter-homeassistant-custom-component
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3.1.0
         with:
           path: cookiecutter-homeassistant-custom-component
       - name: Check out cookiecutter-homeassistant-custom-component-instance
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3.1.0
         with:
           repository: "oncleben31/cookiecutter-homeassistant-custom-component-instance"
           path: cookiecutter-homeassistant-custom-component-instance

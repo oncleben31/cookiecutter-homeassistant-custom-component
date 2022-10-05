@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     name: pre-commit
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v3.1.0
       - uses: actions/setup-python@v2.2.1
         with:
           python-version: "3.9"

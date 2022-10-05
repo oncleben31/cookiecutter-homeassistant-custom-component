@@ -19,7 +19,7 @@ jobs:
     name: Python ${{ matrix.python-version }} (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v3.1.0
         with:
           path: cookiecutter-homeassistant-custom-component
       - uses: actions/setup-python@v2.2.0
