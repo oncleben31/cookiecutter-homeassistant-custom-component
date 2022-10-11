@@ -18,7 +18,7 @@ jobs:
           path: cookiecutter-homeassistant-custom-component-instance
           token: ${{ secrets.X_GITHUB_TOKEN }}
       - name: Set up Python 3.9
-        uses: actions/setup-python@v2.2.1
+        uses: actions/setup-python@v4.3.0
         with:
           python-version: "3.9"
       - name: Install cookiecutter
