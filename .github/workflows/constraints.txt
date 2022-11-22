@@ -1,4 +1,4 @@
 pip==20.3.3
 pre-commit==2.9.3
-nox==2020.12.31
+nox==2022.11.21
 cookiecutter==1.7.2
