@@ -25,23 +25,6 @@ from pytest_homeassistant_custom_component.common import MockConfigEntry
 from .const import MOCK_CONFIG
 
 
-# This fixture bypasses the actual setup of the integration
-# since we only want to test the config flow. We test the
-# actual functionality of the integration in other test modules.
-@pytest.fixture(autouse=True)
-def bypass_setup_fixture():
-    """Prevent setup."""
-    with patch(
-        "custom_components.{{cookiecutter.domain_name}}.async_setup", # fmt: off
-        return_value=True # fmt: off
-    ):
-        with patch( # fmt: off
-            "custom_components.{{cookiecutter.domain_name}}.async_setup_entry", # fmt: off
-            return_value=True # fmt: off
-        ):
-            yield # fmt: off
-
-
 # Here we simiulate a successful config flow from the backend.
 # Note that we use the `bypass_get_data` fixture here because
 # we want the config flow validation to succeed during the test.
