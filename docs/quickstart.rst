@@ -12,7 +12,7 @@ Install Cookiecutter_:
 
 pipx_ is preferred, but you can also install with ``pip install --user``.
 
-It is recommended to set up Python 3.9, or 3.10 using pyenv_.
+It is recommended to set up 3.10 using pyenv_.
 
 
 Creating a project
