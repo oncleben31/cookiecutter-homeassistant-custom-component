@@ -1,8 +1,6 @@
 """Test {{cookiecutter.friendly_name}} config flow."""
 from unittest.mock import patch
 
-import pytest
-
 from custom_components.{{cookiecutter.domain_name}}.const import (
     BINARY_SENSOR,
 )
