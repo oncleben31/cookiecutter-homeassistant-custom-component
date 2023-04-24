@@ -24,8 +24,8 @@ def skip_notifications_fixture():
 def bypass_get_data_fixture():
     """Skip calls to get data from API."""
     with patch(
-        "custom_components.{{cookiecutter.domain_name}}.{{cookiecutter.class_name_prefix}}ApiClient.async_get_data"  # noqa
-    ):
+        "custom_components.{{cookiecutter.domain_name}}.{{cookiecutter.class_name_prefix}}ApiClient.async_get_data"
+    ):  # noqa
         yield
 
 
