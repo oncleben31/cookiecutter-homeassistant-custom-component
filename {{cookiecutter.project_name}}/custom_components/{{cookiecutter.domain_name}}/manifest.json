@@ -6,5 +6,6 @@
   "dependencies": [],
   "config_flow": true,
   "codeowners": ["@{{cookiecutter.github_user}}"],
-  "requirements": []
+  "requirements": [],
+  "version": "{{cookiecutter.version}}"
 }
