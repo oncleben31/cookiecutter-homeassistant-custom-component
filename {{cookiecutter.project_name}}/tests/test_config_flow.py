@@ -32,13 +32,14 @@ from .const import MOCK_CONFIG
 def bypass_setup_fixture():
     """Prevent setup."""
     with patch(
-        "custom_components.{{cookiecutter.domain_name}}.async_setup",
-        return_value=True
-    ), patch( # fmt: off
-        "custom_components.{{cookiecutter.domain_name}}.async_setup_entry", # fmt: off
-        return_value=True, # fmt: off
+        "custom_components.{{cookiecutter.domain_name}}.async_setup", # fmt: off
+        return_value=True # fmt: off
     ):
-        yield
+        with patch( # fmt: off
+            "custom_components.{{cookiecutter.domain_name}}.async_setup_entry", # fmt: off
+            return_value=True # fmt: off
+        ):
+            yield
 
 
 # Here we simiulate a successful config flow from the backend.
