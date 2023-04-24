@@ -16,7 +16,7 @@ jobs:
         with:
           repository: "oncleben31/cookiecutter-homeassistant-custom-component-instance"
           path: cookiecutter-homeassistant-custom-component-instance
-          token: ${{ secrets.X_GITHUB_TOKEN }}
+          token: ${{ secrets.X_GH_TOKEN }}
       - name: Set up Python 3.10.10
         uses: actions/setup-python@v2.2.1
         with:
@@ -61,5 +61,5 @@ jobs:
           git
           -C cookiecutter-homeassistant-custom-component-instance
           push
-          https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/oncleben31/cookiecutter-homeassistant-custom-component-instance.git
+          https://$GITHUB_ACTOR:$GH_TOKEN@github.com/oncleben31/cookiecutter-homeassistant-custom-component-instance.git
           HEAD:main
