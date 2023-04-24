@@ -24,8 +24,8 @@ def skip_notifications_fixture():
 def bypass_get_data_fixture():
     """Skip calls to get data from API."""
     with patch(
-        "custom_components.{{cookiecutter.domain_name}}.{{cookiecutter.class_name_prefix}}ApiClient.async_get_data"
-    ):  # noqa
+        "custom_components.{{cookiecutter.domain_name}}.{{cookiecutter.class_name_prefix}}ApiClient.async_get_data"  # fmt: skip
+    ):
         yield
 
 
@@ -35,7 +35,7 @@ def bypass_get_data_fixture():
 def error_get_data_fixture():
     """Simulate error when retrieving data from API."""
     with patch(
-        "custom_components.{{cookiecutter.domain_name}}.{{cookiecutter.class_name_prefix}}ApiClient.async_get_data",  # noqa
-        side_effect=Exception,
+        "custom_components.{{cookiecutter.domain_name}}.{{cookiecutter.class_name_prefix}}ApiClient.async_get_data", # fmt: skip
+        side_effect=Exception,  # fmt: skip
     ):
         yield
