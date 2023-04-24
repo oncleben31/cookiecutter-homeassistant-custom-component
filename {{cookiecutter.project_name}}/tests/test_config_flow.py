@@ -30,8 +30,7 @@ from .const import MOCK_CONFIG
 @pytest.fixture(autouse=True)
 def bypass_setup_fixture():
     """Prevent setup."""
-    with patch( # fmt: skip
-        "custom_components.{{cookiecutter.domain_name}}.async_setup", return_value=True # fmt: skip
+    with patch("custom_components.{{cookiecutter.domain_name}}.async_setup", return_value=True # fmt: skip
     ), patch( # fmt: skip
         "custom_components.{{cookiecutter.domain_name}}.async_setup_entry", # fmt: skip
         return_value=True, # fmt: skip
