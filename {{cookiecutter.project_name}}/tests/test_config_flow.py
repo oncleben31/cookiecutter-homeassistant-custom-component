@@ -2,6 +2,7 @@
 from unittest.mock import patch
 
 import pytest
+
 from custom_components.{{cookiecutter.domain_name}}.const import (
     BINARY_SENSOR,
 )
@@ -30,11 +31,15 @@ from .const import MOCK_CONFIG
 @pytest.fixture(autouse=True)
 def bypass_setup_fixture():
     """Prevent setup."""
-    with patch("custom_components.{{cookiecutter.domain_name}}.async_setup", return_value=True,), patch(
-        "custom_components.{{cookiecutter.domain_name}}.async_setup_entry",
-        return_value=True,
+    with patch(
+        "custom_components.{{cookiecutter.domain_name}}.async_setup", # fmt: off
+        return_value=True # fmt: off
     ):
-        yield
+        with patch( # fmt: off
+            "custom_components.{{cookiecutter.domain_name}}.async_setup_entry", # fmt: off
+            return_value=True # fmt: off
+        ):
+            yield # fmt: off
 
 
 # Here we simiulate a successful config flow from the backend.
