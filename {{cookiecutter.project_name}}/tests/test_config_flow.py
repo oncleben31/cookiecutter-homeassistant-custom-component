@@ -39,7 +39,7 @@ def bypass_setup_fixture():
             "custom_components.{{cookiecutter.domain_name}}.async_setup_entry", # fmt: off
             return_value=True # fmt: off
         ):
-            yield
+            yield # fmt: off
 
 
 # Here we simiulate a successful config flow from the backend.
