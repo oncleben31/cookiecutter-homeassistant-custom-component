@@ -1,7 +1,4 @@
 """Test {{cookiecutter.friendly_name}} config flow."""
-from unittest.mock import patch
-
-import pytest
 from custom_components.{{cookiecutter.domain_name}}.const import (
     BINARY_SENSOR,
 )
@@ -22,19 +19,6 @@ from homeassistant import data_entry_flow
 from pytest_homeassistant_custom_component.common import MockConfigEntry
 
 from .const import MOCK_CONFIG
-
-
-# This fixture bypasses the actual setup of the integration
-# since we only want to test the config flow. We test the
-# actual functionality of the integration in other test modules.
-@pytest.fixture(autouse=True)
-def bypass_setup_fixture():
-    """Prevent setup."""
-    with patch("custom_components.{{cookiecutter.domain_name}}.async_setup", return_value=True,), patch(
-        "custom_components.{{cookiecutter.domain_name}}.async_setup_entry",
-        return_value=True,
-    ):
-        yield
 
 
 # Here we simiulate a successful config flow from the backend.

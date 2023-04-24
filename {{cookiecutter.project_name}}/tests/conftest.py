@@ -23,7 +23,9 @@ def skip_notifications_fixture():
 @pytest.fixture(name="bypass_get_data")
 def bypass_get_data_fixture():
     """Skip calls to get data from API."""
-    with patch("custom_components.{{cookiecutter.domain_name}}.{{cookiecutter.class_name_prefix}}ApiClient.async_get_data"):
+    with patch(  # fmt: off
+        "custom_components.{{cookiecutter.domain_name}}.{{cookiecutter.class_name_prefix}}ApiClient.async_get_data"  # fmt: off
+    ):  # fmt: off
         yield
 
 
