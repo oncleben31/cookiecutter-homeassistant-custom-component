@@ -50,7 +50,7 @@ It is recommended to use the latest stable version by using the command:
 
 .. parsed-literal::
 
-   $ cookiecutter gh:oncleben31/homeassistant-custom-component \\
+   $ cookiecutter gh:oncleben31/cookiecutter-homeassistant-custom-component \\
      --checkout=\ |current-stable-version|\
 
 
